@@ -1,0 +1,47 @@
+.container-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    height: 500px;
+}
+
+.textos-top {
+    display: grid;
+    gap: 3rem;
+    margin-left: 50px;
+    width: 600px;
+}
+
+.texto1 {
+    color: var(--primary-color);
+    font-size: 32pt;
+    font-weight: 600;
+}
+
+.texto2 {
+    color: var(--primary-color);
+    font-size: 16pt;
+    font-weight: 400;
+}
+
+.texto3 {
+    color: var(--primary-color);
+    font-size: 16pt;
+    font-weight: 600;
+}
+.imagem-top img {
+    width: 500px;
+}
+
+.title {
+    display: flex;
+}
+
+.linha {
+    margin-left: 10%;
+    margin-top: 80px;
+    background-color: var(--primary-color);
+    width: 80%;
+    height: 3px;
+}

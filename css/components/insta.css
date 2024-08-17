@@ -1,0 +1,20 @@
+.natal .imagem {
+    background-color: #1C244B;
+    height: 500px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50pt;
+  }
+
+.instagram .fotos {
+    background-color: #960000;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 50pt;
+}
+

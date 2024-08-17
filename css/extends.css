@@ -1,0 +1,15 @@
+@import './variables.css';
+@import './globals.css';
+
+
+/* Light theme */
+@import './components/home.css';
+@import './components/header.css';
+@import './components/insta.css';
+@import './components/skills.css';
+@import './components/frontend.css';
+@import './components/backend.css';
+@import './components/mobile.css';
+@import './components/projects.css';
+@import './components/footer.css';
+@import './components/contribua.css';
