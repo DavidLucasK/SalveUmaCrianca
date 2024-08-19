@@ -1,123 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
-
+/* CSS Base */
 nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100px;
   z-index: 10;
   background-color: #1C244B;
-  /* background-image: linear-gradient(90deg, black, grey); */
 }
-
-.inicial {
-    display: flex;
-    margin-left: 300px;
-    gap: 6rem;
-    margin-bottom: 80px;
-}
-
-.inicial img {
-  width: 600px;
-  height: 600px;
-}
-
-.inicial .titulo {
-  width: 1000px;
-}
-
-.inicial .titulo .titulo1 {
-  margin-top: 200px;
-  width: 100px;
-  color: #1C244B;
-  font-size: 50pt;
-  font-weight: 600;
-}
-
-.inicial .titulo .titulo2 {
-  width: 1000px;
-  color: #1C244B;
-  font-size: 50pt;
-  font-weight: 600;
-}
-
-.inicial .titulo .texto {
-  color: #1C244B;
-  font-size: 18pt;
-  font-weight: 100;
-}
-
-.inicial .botoes {
-  margin-top: 20px;
-  display: flex;
-  gap: 12rem;
-}
-
-.inicial .botoes .botao {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #1C244B;
-  color: white;
-  width: 200px;
-  height: 50px;
-  border-radius: 100px;
-  transition: 0.3s ease-in-out;
-}
-
-.inicial .botoes .botao:hover {
-  background-color: #c00000;
-}
-
 
 nav .navbar__content {
-  padding: 3rem 4rem 1rem;
   display: flex;
-  gap: 16rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+nav .logos {
+  display: flex;
+  align-items: center;
+  width: fit-content;
 }
 
 nav .logo-navbar {
-  position: relative;
-  margin-left: 100px;
   border-radius: 100%;
   width: 85px;
-  margin-top: -25px;
   transition: 0.5s ease-in-out;
 }
 
 nav .navbar__content .nome-logo {
-    color: white;
-    font-size: larger;
-    width: 100px;
-    margin-top: -20px;
-    margin-left: 20px;
+  color: white;
+  width: 100px;
 }
 
-nav .logos {
-    display: flex;
-}
-
-nav .navbar__content .david-logo:hover{
+nav .navbar__content .david-logo:hover {
   opacity: 100%;
 }
 
-nav .navbar__content .navbar__links {
-}
-
-nav .navbar__content .navbar__links li {
-  display: inline-block;
+.navbar__links li {
+  align-self: center;
 }
 
 nav .navbar__content .navbar__links li:not(:last-of-type) {
-  margin-right: 2rem;
+  margin-right: 0.3rem;
 }
 
 nav .navbar__content .navbar__links a {
-  padding: 1rem;
-  display: inline-block;
   color: rgb(217, 219, 223);
-  margin-top: -10px;
+  padding: 1rem;
   font-size: 12pt;
   font-weight: 600;
   transition: 0.3s ease-in-out;
@@ -125,15 +55,28 @@ nav .navbar__content .navbar__links a {
 }
 
 nav .navbar__content .navbar__links a:hover {
-  /* transform: scale(1.05); */
-  color: white;
-  border-radius: 120px;
   background-color: #c00000;
+  border-radius: 15px;
+  padding: 1rem;
+  font-size: 12pt;
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
 }
 
-nav .navbar__content .navbar__links .insta img{
+nav .navbar__content .navbar__links li:last-child a:hover {
+  background-color: transparent;
+}
+
+.insta img {
+  cursor: pointer;
   width: 30px;
   filter: invert();
+  margin-right: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.insta img:hover {
+  opacity: 0.8;
 }
 
 .navbar.active {
@@ -145,61 +88,8 @@ nav .navbar__content .navbar__mobile .mobile__links {
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
-  nav .navbar__content .navbar__links {
-    display: none;
-  }
-
-  nav .navbar__content .david-logo{
-    font-size: 30pt;
-    text-align: center;
-    font-family: 'Poppins';
-    font-weight: 600;
-    color: white;
-  }
-
-  *{
-    overflow-x: invisible;
-  }
-
-  nav .navbar__content .navbar__mobile {
-    display: flex;
-    margin-top: -4px;
-  }
-
-  nav .navbar__content .navbar__mobile img {
-    width: 3.6rem;
-    height: 3.6rem;
-    cursor: pointer;
-    filter: invert();
-  }
-
-  nav .navbar__content .navbar__mobile.active .mobile__links {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 100%;
-    position: absolute;
-    top: 98%;
-    left: 0;
-    padding: 1rem 0;
-    box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
-
-  nav .navbar__content .navbar__mobile.active .mobile__links li {
-    margin-right: 0;
-  }
-
-  nav .navbar__content .navbar__mobile.active .mobile__links li a {
-    padding: 1rem;
-    display: block;
-    text-align: center;
-  }
-}
 
 @keyframes gradient {
-
   0% {
     background-position: 0 50%;
   }
@@ -220,5 +110,153 @@ nav .navbar__content .navbar__mobile .mobile__links {
 
   100% {
     opacity: 100%;
+  }
+}
+
+
+
+/* 320px — 480px: dispositivos móveis */
+@media only screen and (max-width: 480px) {
+  nav .navbar__content {
+    padding: 2rem 2rem 1rem;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .logo-navbar {
+    margin-left: 0;
+    width: 70px;
+    margin-top: -15px;
+  }
+
+  nav .navbar__content .nome-logo {
+    font-size: medium;
+    margin-top: -10px;
+    margin-left: 0;
+  }
+
+  nav .navbar__content .navbar__links {
+    display: none;
+  }
+
+  nav .navbar__content .navbar__mobile {
+    display: flex;
+  }
+
+  nav .navbar__content .navbar__mobile.active .mobile__links {
+    flex-direction: column;
+    background-color: #1C244B;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  nav .navbar__content .navbar__mobile.active .mobile__links li a {
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 10pt;
+  }
+}
+
+/* 481px — 768px: iPads, tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  nav .navbar__content {
+    padding: 2rem 3rem 1rem;
+    gap: 8rem;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  nav .logo-navbar {
+    margin-left: 0;
+    width: 75px;
+    margin-top: -20px;
+  }
+
+  nav .navbar__content .nome-logo {
+    font-size: large;
+    margin-top: -15px;
+    margin-left: 10px;
+  }
+
+  nav .navbar__content .navbar__links {
+    display: none;
+  }
+
+  nav .navbar__content .navbar__mobile {
+    display: flex;
+  }
+
+  nav .navbar__content .navbar__mobile.active .mobile__links {
+    flex-direction: column;
+    background-color: #1C244B;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  nav .navbar__content .navbar__mobile.active .mobile__links li a {
+    padding: 1rem;
+    text-align: center;
+    font-size: 12pt;
+  }
+}
+
+/* 769px — 1024px: telas pequenas, laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  nav .navbar__content {
+    padding: 3rem 4rem 1rem;
+    gap: 12rem;
+  }
+
+  nav .logo-navbar {
+    margin-left: 50px;
+    width: 80px;
+    margin-top: -22px;
+  }
+
+  nav .navbar__content .nome-logo {
+    font-size: larger;
+    margin-top: -18px;
+    margin-left: 15px;
+  }
+
+  nav .navbar__content .navbar__links {
+    display: flex;
+  }
+
+  nav .navbar__content .navbar__mobile {
+    display: none;
+  }
+}
+
+/* 1025px — 1400px: desktops, telas grandes */
+@media only screen and (min-width: 1025px) and (max-width: 1400px) {
+  nav .navbar__content {
+    justify-content: space-between;
+  }
+
+  nav .logo-navbar {
+    width: 85px;
+  }
+
+  nav .navbar__content .nome-logo {
+    font-size: larger;
+  }
+
+  nav .navbar__content .navbar__links {
+    display: flex;
+  }
+
+  nav .navbar__content .navbar__links li a {
+    font-size: 12pt;
+    font-weight: 700;
+  }
+
+  .insta img {
+    
+  }
+
+  nav .navbar__content .navbar__mobile {
+    display: none;
   }
 }

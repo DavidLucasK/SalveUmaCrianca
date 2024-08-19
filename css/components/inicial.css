@@ -1,0 +1,54 @@
+.inicial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15rem;
+    padding-bottom: 8rem;
+    width: 100vw;
+}
+
+.inicial img {
+  width: 300px;
+}
+
+.inicial .titulo .titulo1 {
+  width: 100px;
+  color: #1C244B;
+  font-size: 50pt;
+  font-weight: 600;
+}
+
+.inicial .titulo .titulo2 {
+  width: 1000px;
+  color: #1C244B;
+  font-size: 50pt;
+  font-weight: 600;
+}
+
+.inicial .titulo .texto {
+  color: #1C244B;
+  font-size: 18pt;
+  font-weight: 100;
+}
+
+.inicial .botoes {
+  margin-top: 20px;
+  display: flex;
+  gap: 12rem;
+}
+
+.inicial .botoes .botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1C244B;
+  color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 100px;
+  transition: 0.3s ease-in-out;
+}
+
+.inicial .botoes .botao:hover {
+  background-color: #c00000;
+}

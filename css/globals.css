@@ -11,8 +11,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
-  margin-top: 15rem;
+  width: 100vw;
   overflow-y: scroll;
 }
 

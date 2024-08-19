@@ -4,6 +4,7 @@
 
 /* Light theme */
 @import './components/home.css';
+@import './components/inicial.css';
 @import './components/header.css';
 @import './components/insta.css';
 @import './components/skills.css';
