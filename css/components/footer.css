@@ -5,6 +5,10 @@ footer {
     background-color: var(--primary-color);
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 150px;
     color: white;
+}
+
+footer > div {
+    font-size: 16pt;
 }

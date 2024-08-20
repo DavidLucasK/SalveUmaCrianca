@@ -1,20 +1,113 @@
-.natal .imagem {
-    background-color: var(--primary-color);
-    height: 500px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50pt;
-  }
-
-.instagram .fotos {
-    background-color: #960000;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    color: white;
-    align-items: center;
-    font-size: 50pt;
+.instagram {
+  padding: 8rem 0 15rem 0;
 }
 
+.instagram h1 {
+  text-align: center;
+  font-size: 30pt;
+  font-weight: 600;
+  padding-bottom: 5rem;
+}
+
+.instagram ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.instagram li {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.instagram li a {
+  display: block;
+  position: relative;
+  z-index: 1; /* Garante que o link fique acima do efeito de escurecimento */
+}
+
+.instagram li img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.233) -15px -5px 15px 0;
+}
+
+.instagram li::before {
+  content: '';
+  background-image: url('../../assets/instagram-invert.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  filter: invert();
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  pointer-events: none;
+  width: 56px; /* Ajuste o tamanho conforme necessário */
+  height: 56px; /* Ajuste o tamanho conforme necessário */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2; /* Garante que o ícone fique acima da imagem e do efeito de escurecimento */
+}
+
+.instagram li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0; /* Fica abaixo do ícone */
+  border-radius: 15px;
+}
+
+.instagram li:hover::after {
+  opacity: 1;
+}
+
+.instagram li:hover::before {
+  opacity: 0.8;
+}
+
+.instagram li:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.7);
+}
+
+.siga-insta {
+
+}
+
+.siga-insta p {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding: 2rem 8rem 2rem 4rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 30px;
+  font-size: 20pt;
+  transition: 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.329) -20px -5px 20px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.39) 0px -2px 6px 0px inset;
+}
+
+.siga-insta p:hover {
+  background-color: var(--secondary-color);
+}
+
+.siga-insta img {
+  position: absolute;
+  margin-left: 12px;
+  width: 36px;
+}
