@@ -65,34 +65,64 @@
     <div class="linha"></div>
     <section class="container-bottom">
         <div class="pix-form">
-            <div class="pix-img">
-                <img src="../assets/pix.png" alt="PIX">
+            <div class="pix-left">
+                <div class="pix-img">
+                    <img src="../assets/pix.png" alt="PIX">
+                </div>
+                <p>
+                    Para doar viar PIX, é muito simples!
+                    <br/>
+                    Basta copiar a chave do CNPJ abaixo e colocar no seu banco.
+                </p>
+                <p>
+                    CHAVE CNPJ DO INSTITUTO
+                </p>
+                <p class="cnpj">
+                    47.028.487/0001-84
+                </p>
             </div>
-            <p>
-                Doando via PIX sua doação é feita na hora
-            </p>
-            <p>
-                Para obter sucesso na doação é simples,
-                digite a CHAVE DO PIX no aplicativo do seu banco
-            </p>
-            <p>
-                CHAVE CNPJ DO INSTITUTO
-            </p>
-            <p class="cnpj">
-                47.028.487/0001-84
-            </p>
-            <p>
-                ou leia o Qr Code abaixo:
-            </p>
-            <div class="qrcode-img">
-                <img src="../assets/qrcode-pix.png" width="300px" alt="PIX">
+            <div class="pix-right">
+                <p>
+                    Qr Code do PIX
+                </p>
+                <div class="qrcode-img">
+                    <img src="../assets/qrcode-pix.png" width="300px" alt="PIX">
+                </div>
+                <p>
+                    Depósito em conta corrente
+                </p>
+                <span>BANCO DO BRASIL</span>
+                <span>Agência: 6503-0</span>
+                <span>Conta corrente: 39879-9</span>
+                <span>INSTITUTO SALVE UMA CRIANÇA</span>
             </div>
         </div>
         <div class="container-form">
-            <p>a</p>
-            <p>n</p>
-            <p>c</p>
-            <p>d</p>
+            <p>Se o seu desejo é contribuir através do boleto bancário, por favor preencha o formulário abaixo</p>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+    
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="telefone">DDD / Telefone:</label>
+                <div class="telefone-container">
+                    <input type="text" id="ddd" name="ddd" maxlength="3" placeholder="DDD" required>
+                    <input type="text" id="telefone" name="telefone" maxlength="9" placeholder="Telefone" required>
+                </div>
+    
+                <label for="cpf-cnpj">CPF/CNPJ:</label>
+                <input type="text" id="cpf-cnpj" name="cpf-cnpj" required>
+    
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+    
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" name="valor" step="0.01" required>
+    
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </section>
     <footer>

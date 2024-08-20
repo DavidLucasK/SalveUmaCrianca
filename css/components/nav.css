@@ -7,6 +7,7 @@ nav {
   height: 100px;
   z-index: 10;
   background-color: var(--primary-color);
+  box-shadow: rgb(0, 0, 0) 0 0 30px;
 }
 
 nav .navbar__content {
@@ -69,9 +70,9 @@ nav .navbar__content .navbar__links a:hover {
   transition: 0.3s ease-in-out;
 }
 
-nav .navbar__content .navbar__links li:last-child a:hover {
-  background-color: transparent;
-  box-shadow: none;
+.insta {
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
 .insta img {
@@ -83,7 +84,7 @@ nav .navbar__content .navbar__links li:last-child a:hover {
 }
 
 .insta img:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .navbar.active {
