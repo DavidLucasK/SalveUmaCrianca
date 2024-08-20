@@ -1,0 +1,40 @@
+.perfil {
+    padding-top: 20rem;
+}
+
+.perfil .titulo {
+    padding-bottom: 5rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.perfil .titulo p {
+    font-size: 46pt;
+    font-weight: 600;
+}
+
+.container-perfil {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 20rem 15rem;
+    gap: 7rem;
+}
+
+.foto img {
+    width: 400px;
+    border-radius: 30px;
+}
+
+.textos {
+    
+}
+
+.textos h2 {
+    font-size: 32pt;
+    margin-top: -0.5rem;
+    padding-bottom: 2rem;
+}
+
+.textos p {
+    font-size: 16pt;
+}
