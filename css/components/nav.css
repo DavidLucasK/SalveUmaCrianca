@@ -6,7 +6,7 @@ nav {
   width: 100vw;
   height: 100px;
   z-index: 10;
-  background-color: #1C244B;
+  background-color: var(--primary-color);
 }
 
 nav .navbar__content {
@@ -60,7 +60,7 @@ nav .navbar__content .navbar__links a {
 }
 
 nav .navbar__content .navbar__links a:hover {
-  background-color: #c00000;
+  background-color: var(--secondary-color);
   border-radius: 15px;
   padding: 1rem;
   font-size: 12pt;
@@ -153,7 +153,7 @@ nav .navbar__content .navbar__mobile .mobile__links {
 
   nav .navbar__content .navbar__mobile.active .mobile__links {
     flex-direction: column;
-    background-color: #1C244B;
+    background-color: var(--primary-color);
     width: 100%;
     padding: 1rem 0;
   }
@@ -196,7 +196,7 @@ nav .navbar__content .navbar__mobile .mobile__links {
 
   nav .navbar__content .navbar__mobile.active .mobile__links {
     flex-direction: column;
-    background-color: #1C244B;
+    background-color: var(--primary-color);
     width: 100%;
     padding: 1rem 0;
   }

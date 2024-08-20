@@ -3,7 +3,8 @@
     justify-content: center;
     align-items: center;
     gap: 10rem;
-    height: 500px;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
 }
 
 .textos-top {
@@ -27,11 +28,11 @@
 
 .texto3 {
     color: var(--primary-color);
-    font-size: 16pt;
+    font-size: 22pt;
     font-weight: 600;
 }
 .imagem-top img {
-    width: 500px;
+    width: 600px;
 }
 
 .title {
@@ -44,4 +45,32 @@
     background-color: var(--primary-color);
     width: 80%;
     height: 3px;
+}
+
+.container-bottom {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 20rem;
+}
+
+.container-form {
+    width: 800px;
+    height: 800px;
+}
+
+.pix-form {
+    padding-left: 13rem;
+    width: 50%;
+}
+
+.pix-form p {
+    color: var(--primary-color);
+    width: 70%;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.cnpj {
+    font-weight: 600;
+    color: var(--secondary-color) !important;
 }

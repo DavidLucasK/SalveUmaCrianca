@@ -11,7 +11,7 @@
 .colab-title p {
     font-size: 5.5rem;
     font-weight: 600;
-    color: #1C244B;
+    color: var(--primary-color);
     text-shadow: -20px 5px 10px rgba(0, 0, 0, 0.205);
 }
 
@@ -39,7 +39,7 @@
 
 .container-colab ul li {
     display: flex;
-    background-color: #1C244B;
+    background-color: var(--primary-color);
     color: white;
     width: 500px;
     height: 230px;
@@ -74,7 +74,7 @@
     cursor: pointer;
     font-weight: 600;
     background-color: white;
-    color: #1C244B;
+    color: var(--primary-color);
     width: fit-content;
     margin: 0 auto;
     border-radius: 15px;

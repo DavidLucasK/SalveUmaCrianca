@@ -1,5 +1,5 @@
 .natal .imagem {
-    background-color: #1C244B;
+    background-color: var(--primary-color);
     height: 500px;
     color: white;
     display: flex;

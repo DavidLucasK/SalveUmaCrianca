@@ -2,7 +2,7 @@ footer {
     bottom: 0;
     display: flex;
     width: 100%;
-    background-color: #1C244B;
+    background-color: var(--primary-color);
     justify-content: center;
     align-items: center;
     height: 80px;
