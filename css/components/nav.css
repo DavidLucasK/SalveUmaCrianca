@@ -14,31 +14,36 @@ nav .navbar__content {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  padding-left: 6rem;
+  padding-right: 3rem;
 }
 
 nav .logos {
   display: flex;
   align-items: center;
-  width: fit-content;
+  gap: 0.5rem;
 }
 
 nav .logo-navbar {
   border-radius: 100%;
   width: 85px;
+  margin-top: 5px;
   transition: 0.5s ease-in-out;
 }
 
 nav .navbar__content .nome-logo {
-  color: white;
   width: 100px;
-}
-
-nav .navbar__content .david-logo:hover {
-  opacity: 100%;
+  color: white;
+  text-align: center;
+  font-size: 14pt;
 }
 
 .navbar__links li {
   align-self: center;
+}
+
+nav .navbar__content .navbar__links {
+  display: flex;
 }
 
 nav .navbar__content .navbar__links li:not(:last-of-type) {
@@ -51,7 +56,7 @@ nav .navbar__content .navbar__links a {
   font-size: 12pt;
   font-weight: 600;
   transition: 0.3s ease-in-out;
-  border-radius: 120px;
+  border-radius: 15px;
 }
 
 nav .navbar__content .navbar__links a:hover {
@@ -60,11 +65,13 @@ nav .navbar__content .navbar__links a:hover {
   padding: 1rem;
   font-size: 12pt;
   font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.116) -20px -5px 30px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.39) 0px -2px 6px 0px inset;
   transition: 0.3s ease-in-out;
 }
 
 nav .navbar__content .navbar__links li:last-child a:hover {
   background-color: transparent;
+  box-shadow: none;
 }
 
 .insta img {

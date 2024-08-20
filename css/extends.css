@@ -3,7 +3,7 @@
 
 
 /* Light theme */
-@import './components/home.css';
+@import './components/nav.css';
 @import './components/inicial.css';
 @import './components/header.css';
 @import './components/insta.css';
@@ -14,3 +14,7 @@
 @import './components/projects.css';
 @import './components/footer.css';
 @import './components/contribua.css';
+
+/*Tela Quem Somos*/
+@import './components/historia/historia.css';
+@import './components/colaboradores/colaboradores.css';
