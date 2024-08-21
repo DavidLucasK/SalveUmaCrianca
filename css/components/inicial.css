@@ -3,16 +3,18 @@
   justify-content: center;
   align-items: center;
   gap: 15rem;
+  width: 100vw;
   padding-top: 15rem;
   padding-left: 20rem;
   padding-bottom: 8rem;
-  width: 100vw;
 }
 
+/* Imagem principal */
 .inicial img {
   width: 500px;
 }
 
+/* Títulos */
 .inicial .titulo .titulo1 {
   width: 100px;
   color: var(--primary-color);
@@ -27,12 +29,14 @@
   font-weight: 600;
 }
 
+/* Texto adicional */
 .inicial .titulo .texto {
   color: var(--primary-color);
   font-size: 18pt;
   font-weight: 100;
 }
 
+/* Botões */
 .inicial .botoes {
   margin-top: 20px;
   display: flex;
@@ -55,4 +59,169 @@
 
 .inicial .botoes .botao:hover {
   background-color: var(--secondary-color);
+}
+
+/* Media Queries */
+
+/* Para dispositivos móveis: 320px — 480px */
+@media screen and (max-width: 480px) {
+  .inicial {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 13rem;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .inicial img {
+    width: 250px;
+  }
+
+  .inicial .titulo {
+    margin-top: -15rem;
+    padding-bottom: 5rem;
+  }
+
+  .inicial .titulo .titulo1 {
+    font-size: 24pt;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .inicial .titulo .titulo2 {
+    font-size: 24pt;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .inicial .titulo .texto {
+    font-size: 14pt;
+  }
+
+  .inicial .botoes {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .inicial .botoes .botao {
+    width: 150px;
+    font-size: 10pt;
+  }
+}
+
+/* Para tablets: 481px — 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .inicial {
+    flex-direction: column;
+    padding: 15rem 4rem 1rem;
+    text-align: center;
+  }
+
+  .inicial img {
+    width: 300px;
+  }
+
+  .inicial .titulo {
+    margin-top: -15rem;
+  }
+
+  .inicial .titulo .titulo1 {
+    font-size: 36pt;
+    width: 80vw;
+  }
+
+  .inicial .titulo .titulo2 {
+    font-size: 36pt;
+    width: 80vw;
+  }
+
+  .inicial .titulo .texto {
+    font-size: 16pt;
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  .inicial .botoes {
+    flex-direction: row;
+    gap: 2rem;
+    margin: 40px auto;
+    width: fit-content;
+  }
+
+  .inicial .botoes .botao {
+    width: 180px;
+    font-size: 11pt;
+  }
+}
+
+/* Para telas pequenas e laptops: 769px — 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .inicial {
+    flex-direction: row;
+    padding: 0;
+    padding-top: 15rem;
+    padding-left: 50rem;
+    width: 100vw;
+    gap: 5rem;
+  }
+
+  .inicial img {
+    width: 300px;
+  }
+
+  .inicial .titulo{
+    margin-top: -5rem;
+  }
+
+  .inicial .titulo .titulo1 {
+    font-size: 40pt;
+    width: fit-content;
+  }
+
+  .inicial .titulo .titulo2 {
+    font-size: 40pt;
+  }
+
+  .inicial .titulo .texto {
+    font-size: 16pt;
+  }
+
+  .inicial .botoes {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .inicial .botoes .botao {
+    width: 190px;
+    font-size: 11pt;
+  }
+}
+
+/* Já existente para telas grandes: 1025px — 1400px */
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+  .inicial {
+    padding-left: 8rem;
+    gap: 8rem;
+  }
+
+  .inicial img {
+    width: 400px;
+  }
+
+  .inicial .titulo .titulo1 {
+    width: fit-content;
+    font-size: 50pt;
+  }
+
+  .inicial .titulo .titulo2 {
+    width: 700px;
+    font-size: 50pt;
+  }
+
+  .inicial .titulo .texto {
+    font-size: 18pt;
+    width: fit-content;
+    height: fit-content;
+  }
 }

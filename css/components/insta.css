@@ -108,3 +108,27 @@
   margin-left: 12px;
   width: 36px;
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+  .instagram li {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+
+  .instagram li::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .siga-insta {
+    padding: 1.5rem 2rem;
+    border-radius: 20px;
+    font-size: 16pt;
+  }
+
+  .siga-insta img {
+    width: 30px;
+    height: 30px;
+  }
+}

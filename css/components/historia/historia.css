@@ -11,10 +11,6 @@
     text-shadow: -20px 5px 10px rgba(0, 0, 0, 0.205);
 }
 
-.historia-title h1 {
-    
-}
-
 .historia-title .linha {
     margin-left: 5rem;
     margin-bottom: 9rem;
@@ -95,7 +91,7 @@
 
 .visao p {
     font-size: 16pt;
-    width: 1000px;
+    width: 1000px;/*Mudar que está errado*/
     margin: 0 auto;
     font-weight: 500;
     padding: 3rem;
@@ -107,4 +103,51 @@
 
 .valores-img img {
     margin-bottom: -1rem;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+    .historia {
+        padding-left: 10rem;
+    }
+
+    .historia-title h1 {
+        font-size: 36pt;
+    }
+    
+    .texto {
+        gap: 5rem;
+        height: 400px;
+    }
+
+    .texto .imagens img {
+        width: 400px;
+    }
+    
+    .texto p {
+        font-size: 12pt;
+        line-height: 2.2rem;
+    }
+
+    .historia-bottom .imagem img {
+        width: 100%;
+    }
+
+    .visao {
+        width: 100vw;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .visao p{
+        font-size: 14pt;
+        margin: 0 auto;
+        font-weight: 500;
+        padding: 3rem;
+    }
+
+    .valores-img img {
+        height: 540px;
+        object-fit: cover;
+    }
 }

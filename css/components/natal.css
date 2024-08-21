@@ -8,3 +8,27 @@
   object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.568) 0 0 40px;
 }
+
+@media screen and (max-width: 480px) {
+  .natal .imagem img {
+    height: 150px;
+  }
+ }
+
+ @media screen and (min-width: 481px) and (max-width: 768px) {
+  .natal .imagem img {
+    height: auto;
+  }
+ }
+
+ @media screen and (min-width: 769px) and (max-width: 1024px) {
+  .natal .imagem img {
+    height: auto;
+  }
+ }
+
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+  .natal .imagem img {
+    height: 360px;
+  }
+ }

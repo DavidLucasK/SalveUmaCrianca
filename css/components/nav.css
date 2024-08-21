@@ -90,15 +90,6 @@ nav .navbar__content .navbar__links a:hover {
   opacity: 0.7;
 }
 
-.navbar.active {
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
-}
-
-nav .navbar__content .navbar__mobile,
-nav .navbar__content .navbar__mobile .mobile__links {
-  display: none;
-}
-
 
 @keyframes gradient {
   0% {
@@ -125,25 +116,24 @@ nav .navbar__content .navbar__mobile .mobile__links {
 }
 
 
-
 /* 320px — 480px: dispositivos móveis */
 @media only screen and (max-width: 480px) {
   nav .navbar__content {
-    padding: 2rem 2rem 1rem;
-    gap: 2rem;
-    flex-direction: column;
-    align-items: center;
+    padding: 0;
+    flex-direction: row;
+  }
+
+  .logos {
+    padding-top: 0.3rem;
+    padding-left: 1rem;
   }
 
   nav .logo-navbar {
-    margin-left: 0;
-    width: 70px;
-    margin-top: -15px;
+    width: 85px;
   }
 
   nav .navbar__content .nome-logo {
     font-size: medium;
-    margin-top: -10px;
     margin-left: 0;
   }
 
@@ -152,20 +142,44 @@ nav .navbar__content .navbar__mobile .mobile__links {
   }
 
   nav .navbar__content .navbar__mobile {
-    display: flex;
+    display: block;
   }
 
-  nav .navbar__content .navbar__mobile.active .mobile__links {
-    flex-direction: column;
-    background-color: var(--primary-color);
-    width: 100%;
-    padding: 1rem 0;
+  nav details {
+    position: relative;
   }
 
-  nav .navbar__content .navbar__mobile.active .mobile__links li a {
-    padding: 0.8rem;
-    text-align: center;
-    font-size: 10pt;
+  nav summary {
+    list-style: none;
+    margin-right: 2rem;
+  }
+
+  nav details ul {
+    position: fixed;
+    background-color: #FFF;
+    width: 100vw;
+    left: 0;
+    margin-top: 3.6rem;
+    list-style: none;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 0px 10px 67px 0px rgb(48, 48, 48);
+  }
+
+  nav details ul li {
+    padding: 5px 15px;
+    cursor: pointer;
+    line-height: 3rem;
+    font-size: 12pt;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+
+  nav details ul li:hover {
+    background-color: #f0f2fb;
+  }
+
+  summary i {
+    color: #FFF;
   }
 }
 
@@ -181,7 +195,7 @@ nav .navbar__content .navbar__mobile .mobile__links {
   nav .logo-navbar {
     margin-left: 0;
     width: 75px;
-    margin-top: -20px;
+    margin-top: -10px;
   }
 
   nav .navbar__content .nome-logo {
@@ -195,50 +209,91 @@ nav .navbar__content .navbar__mobile .mobile__links {
   }
 
   nav .navbar__content .navbar__mobile {
-    display: flex;
+    display: block;
   }
 
-  nav .navbar__content .navbar__mobile.active .mobile__links {
-    flex-direction: column;
-    background-color: var(--primary-color);
-    width: 100%;
-    padding: 1rem 0;
+  nav details {
+    position: relative;
   }
 
-  nav .navbar__content .navbar__mobile.active .mobile__links li a {
-    padding: 1rem;
-    text-align: center;
+  nav summary {
+    list-style: none;
+    margin-right: 0;
+  }
+
+  nav details ul{
+    position: fixed;
+    background-color: #FFF;
+    width: 100vw;
+    left: 0;
+    margin-top: 3rem;
+    list-style: none;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 0px 10px 67px 0px rgb(48, 48, 48);
+  }
+
+  nav details ul li {
+    padding: 5px 15px;
+    cursor: pointer;
+    line-height: 3rem;
     font-size: 12pt;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+
+  nav details ul li:hover {
+    background-color: #f0f2fb;
+  }
+
+  nav details ul li a{
+    padding: 0 27rem;
+  }
+
+  summary i {
+    color: #FFF;
   }
 }
 
 /* 769px — 1024px: telas pequenas, laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   nav .navbar__content {
-    padding: 3rem 4rem 1rem;
-    gap: 12rem;
+    padding: 2rem 0 0;
+    gap: 3rem;
   }
 
   nav .logo-navbar {
-    margin-left: 50px;
+    margin-left: 1rem;
     width: 80px;
-    margin-top: -22px;
+    margin-top: -10px;
   }
 
   nav .navbar__content .nome-logo {
-    font-size: larger;
-    margin-top: -18px;
-    margin-left: 15px;
+    font-size: 12pt;
+    margin-top: -10px;
+    margin-left: -10px;
   }
 
   nav .navbar__content .navbar__links {
     display: flex;
   }
 
+  nav .navbar__content .navbar__links li a {
+    font-size: 8pt;
+  }
+
+  .insta img {
+    display: none;
+  }
+
+  nav .navbar__content .navbar__links li a:hover {
+    font-size: 8pt;
+  }
+
   nav .navbar__content .navbar__mobile {
     display: none;
   }
 }
+
 
 /* 1025px — 1400px: desktops, telas grandes */
 @media only screen and (min-width: 1025px) and (max-width: 1400px) {
@@ -251,7 +306,7 @@ nav .navbar__content .navbar__mobile .mobile__links {
   }
 
   nav .navbar__content .nome-logo {
-    font-size: larger;
+    font-size: 12pt;
   }
 
   nav .navbar__content .navbar__links {
@@ -259,8 +314,12 @@ nav .navbar__content .navbar__mobile .mobile__links {
   }
 
   nav .navbar__content .navbar__links li a {
-    font-size: 12pt;
+    font-size: 10pt;
     font-weight: 700;
+  }
+
+  nav .navbar__content .navbar__links li a:hover {
+    font-size: 10pt;
   }
 
   .insta img {
