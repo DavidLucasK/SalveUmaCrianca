@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15rem 17rem 0 15rem;
+    background: linear-gradient(180deg, #ffffff, #ececec) no-repeat;
 }
 
 .textos-top {
@@ -55,6 +56,7 @@
     justify-content: center;
     padding: 3rem 19rem;
     padding-bottom: 7rem;
+    background: linear-gradient(360deg, #ffffff, #ececec) no-repeat;
 }
 
 /* Pix Container*/

@@ -70,7 +70,7 @@ nav .navbar__content .navbar__links a:hover {
   transition: 0.3s ease-in-out;
 }
 
-.insta {
+.insta a:hover {
   background-color: transparent !important;
   box-shadow: none !important;
 }

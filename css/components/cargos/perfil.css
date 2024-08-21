@@ -1,5 +1,6 @@
 .perfil {
-    padding-top: 20rem;
+    padding-top: 15rem;
+    background: linear-gradient(180deg, #ffffff, #ececec) no-repeat;
 }
 
 .perfil .titulo {
@@ -9,7 +10,7 @@
 }
 
 .perfil .titulo p {
-    font-size: 46pt;
+    font-size: 38pt;
     font-weight: 600;
 }
 
@@ -21,20 +22,19 @@
 }
 
 .foto img {
-    width: 400px;
+    width: 300px;
     border-radius: 30px;
-}
-
-.textos {
-    
 }
 
 .textos h2 {
     font-size: 32pt;
     margin-top: -0.5rem;
     padding-bottom: 2rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
 }
 
 .textos p {
-    font-size: 16pt;
+    font-size: 14pt;
+    line-height: 2rem;
 }
