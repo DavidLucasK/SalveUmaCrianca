@@ -149,6 +149,18 @@ nav .navbar__content .navbar__links a:hover {
     position: relative;
   }
 
+  nav details summary i::before {
+    content: "\f0c9"; /* Ícone de "hambúrguer" (fa-bars) */
+    font-family: "Font Awesome 5 Free"; /* Família de ícones */
+    font-weight: 900;
+    display: inline-block;
+  }
+  
+  nav details[open] summary i::before {
+    content: "\f00d"; /* Ícone de "X" (fa-times) */
+    width: 35px;
+  }
+
   nav summary {
     list-style: none;
     margin-right: 2rem;
@@ -214,6 +226,18 @@ nav .navbar__content .navbar__links a:hover {
 
   nav details {
     position: relative;
+  }
+
+  nav details summary i::before {
+    content: "\f0c9"; /* Ícone de "hambúrguer" (fa-bars) */
+    font-family: "Font Awesome 5 Free"; /* Família de ícones */
+    font-weight: 900;
+    display: inline-block;
+  }
+  
+  nav details[open] summary i::before {
+    content: "\f00d"; /* Ícone de "X" (fa-times) */
+    width: 35px;
   }
 
   nav summary {
