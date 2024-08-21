@@ -101,6 +101,133 @@
     object-position: center top;
 }
 
+@media screen and (max-width: 480px) {
+    .colab {
+        width: 100vw;
+    }
+
+    .colab-title p {
+        font-size: 4rem;
+    }
+
+    .container-colab ul {
+        grid-template-columns: repeat(1, 1fr); /* Define 3 colunas de largura igual */
+        padding: 0;
+    }
+
+    .container-colab ul li {
+        padding: 4rem;
+        width: 340px;
+        height: fit-content;
+        gap: 4rem;
+    }
+
+    .img-colab img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .colab-cargo {
+        font-size: 14pt !important;
+        font-weight: 500;
+    }
+    
+    .colab-nome {
+        font-size: 12pt !important;
+        font-weight: 300;
+    }
+    
+    .colab-saiba {
+        padding: 1rem 2rem;
+        font-size: 10pt !important;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .colab {
+        width: 100vw;
+    }
+
+    .colab-title p {
+        font-size: 4rem;
+    }
+
+    .container-colab ul {
+        grid-template-columns: repeat(1, 1fr); /* Define 3 colunas de largura igual */
+        padding: 0;
+    }
+
+    .container-colab ul li {
+        padding: 4rem;
+        width: 380px;
+        height: fit-content;
+        gap: 4rem;
+    }
+
+    .img-colab img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .colab-cargo {
+        font-size: 14pt !important;
+        font-weight: 500;
+    }
+    
+    .colab-nome {
+        font-size: 12pt !important;
+        font-weight: 300;
+    }
+    
+    .colab-saiba {
+        padding: 1rem 2rem;
+        font-size: 10pt !important;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .colab {
+        width: 100vw;
+    }
+
+    .colab-title p {
+        font-size: 4rem;
+    }
+
+    .container-colab ul {
+        grid-template-columns: repeat(2, 1fr); /* Define 3 colunas de largura igual */
+        gap: 4rem;
+        column-gap: 4rem;
+    }
+
+    .container-colab ul li {
+        padding: 4rem;
+        width: 350px;
+        height: fit-content;
+        gap: 4rem;
+    }
+
+    .img-colab img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .colab-cargo {
+        font-size: 14pt !important;
+        font-weight: 500;
+    }
+    
+    .colab-nome {
+        font-size: 12pt !important;
+        font-weight: 300;
+    }
+    
+    .colab-saiba {
+        padding: 1rem 2rem;
+        font-size: 10pt !important;
+    }
+}
+
 @media screen and (min-width: 1025px) and (max-width: 1400px) {
     .colab {
         width: 100vw;

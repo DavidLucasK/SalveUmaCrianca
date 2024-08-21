@@ -123,6 +123,20 @@
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .instagram li {
+    width: 200px;
+    height: 200px;
+  }
+
+  .siga-insta {
+    padding: 1.5rem 2.5rem;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 16pt;
+  }
+}
+
 @media screen and (min-width: 1025px) and (max-width: 1400px) {
   .instagram li {
     position: relative;

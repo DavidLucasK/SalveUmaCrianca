@@ -271,10 +271,6 @@ nav .navbar__content .navbar__links a:hover {
     background-color: #f0f2fb;
   }
 
-  nav details ul li a{
-    padding: 0 27rem;
-  }
-
   summary i {
     color: #FFF;
   }
