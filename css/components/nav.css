@@ -6,7 +6,10 @@ nav {
   width: 100vw;
   height: 100px;
   z-index: 10;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  background: linear-gradient(90deg, #0a123a, #1C244B, #334081, #0a123a) no-repeat;
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
   box-shadow: rgb(0, 0, 0) 0 0 30px;
 }
 
@@ -266,5 +269,17 @@ nav .navbar__content .navbar__mobile .mobile__links {
 
   nav .navbar__content .navbar__mobile {
     display: none;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
   }
 }

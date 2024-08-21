@@ -2,7 +2,10 @@ footer {
     bottom: 0;
     display: flex;
     width: 100%;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    background: linear-gradient(90deg, #0a123a, #1C244B, #334081, #0a123a) no-repeat;
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
     justify-content: center;
     align-items: center;
     height: 150px;
@@ -11,5 +14,5 @@ footer {
 }
 
 footer > div {
-    font-size: 16pt;
+    font-size: 14pt;
 }
