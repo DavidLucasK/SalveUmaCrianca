@@ -159,6 +159,7 @@ nav .navbar__content .navbar__links a:hover {
   nav details[open] summary i::before {
     content: "\f00d"; /* Ícone de "X" (fa-times) */
     width: 35px;
+    transform: scale(1.2);
   }
 
   nav summary {
@@ -238,6 +239,7 @@ nav .navbar__content .navbar__links a:hover {
   nav details[open] summary i::before {
     content: "\f00d"; /* Ícone de "X" (fa-times) */
     width: 35px;
+    transform: scale(1.2);
   }
 
   nav summary {
