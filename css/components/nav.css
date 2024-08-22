@@ -35,6 +35,10 @@ nav .logo-navbar {
   transition: 0.5s ease-in-out;
 }
 
+nav .logo-navbar:hover{
+  transform: rotate(60deg);
+}
+
 nav .navbar__content .nome-logo {
   width: 100px;
   color: white;
