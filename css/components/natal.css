@@ -27,9 +27,28 @@
 }
 
 @media screen and (max-width: 480px) {
-  .natal .imagem img {
-    height: 150px;
+  .natal .imagem {
+    width: 100vw;
+    position: relative;
   }
+
+.arvore1 {
+  position: absolute;
+  transform: scale(0.5);
+  z-index: 2;
+}
+
+.arvore1.left {
+  left: 50%;
+  top: 50%; /* Alinha verticalmente ao centro */
+  transform: translateY(-50%) scale(0.4); /* Centraliza a árvore verticalmente e aplica a escala */
+}
+
+.arvore1.right {
+  right: 50%; /* Alinha a árvore ao lado direito */
+  top: 50%; /* Alinha verticalmente ao centro */
+  transform: translateY(-50%) scale(0.4); /* Centraliza a árvore verticalmente e aplica a escala */
+}
  }
 
  @media screen and (min-width: 481px) and (max-width: 768px) {
