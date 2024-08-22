@@ -94,6 +94,10 @@ nav .navbar__content .navbar__links a:hover {
   opacity: 0.7;
 }
 
+nav .navbar__content .navbar__mobile {
+    display: none;
+}
+
 
 @keyframes gradient {
   0% {
