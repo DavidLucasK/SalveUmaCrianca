@@ -13,7 +13,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- Title -->
-  <title>Contribua - Salve Uma Criança</title>
+  <title>Boleto - Salve Uma Criança</title>
   <!-- Favicon -->
   <link rel="shortcut icon" href="../assets/Logo-Rounded-Last.png" type="image/x-icon">
   <!-- CSS -->
@@ -60,7 +60,7 @@
                     <li><a href="quemsomos.html">QUEM SOMOS</a></li>
                     <li><a href="colaboradores.html">COLABORADORES</a></li>
                     <li><a href="parceiros.html">PARCEIROS</a></li>
-                    <li><a href="#">CONTRIBUA</a></li>
+                    <li><a href="contribua.html">CONTRIBUA</a></li>
                     <li><a href="#footer">PROJETOS</a></li>
                     <li><a href="#footer">EVENTOS</a></li>
                     <li><a href="#footer">CAMPANHAS</a></li>
@@ -68,62 +68,34 @@
             </details>
         </div>
     </nav>
-    <section class="container-top">
-        <div class="textos-top">
-           <div class="texto1">Um gesto seu pode transformar o futuro de uma criança.
-            Quando você doa, você planta uma semente.</div> 
-           <div class="texto2">Contamos com a colaboração de todos para que possamos continuar oferecendo nossos serviços. Se você gosta do nosso trabalho e quer contribuir financeiramente, doe agora mesmo! É simples, rápido e seguro. 
-
-           </div> 
-           <div class="texto3">Obrigado por nos apoiar!</div> 
-        </div>
-        <div class="imagem-top">
-            <img src="../assets/kids-playing.png" alt="crianças">
-        </div>
-    </section>
-    <section class="container-mid">
-        <p>
-            Para doar viar PIX, é muito simples!
-            <br/>
-            Basta escanear o QRCode ou enviar no CNPJ abaixo:
-        </p>
-    </section>
-    <section class="container-bottom">
-        <div class="pix-form">
-            <div class="pix-left">
-                <p>
-                    CHAVE CNPJ DO INSTITUTO
-                </p>
-                <p class="cnpj">
-                    47.028.487/0001-84
-                </p>
-                <p>
-                    Depósito em conta corrente
-                </p>
-                <span>BANCO DO BRASIL</span>
-                <span>Agência: 6503-0</span>
-                <span>Conta corrente: 39879-9</span>
-                <span>INSTITUTO SALVE UMA CRIANÇA</span>
-            </div>
-            <div class="pix-right">
-                <div class="pix-img">
-                    <img src="../assets/pix.png" alt="PIX">
+    <section class="container-bottom-page">
+        <div class="container-form">
+            <p>Se você quer contribuir através do boleto bancário, por favor preencha o formulário abaixo</p>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+    
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="telefone">DDD / Telefone:</label>
+                <div class="telefone-container">
+                    <input type="text" id="ddd" name="ddd" maxlength="3" placeholder="DDD" required>
+                    <input type="text" id="telefone" name="telefone" maxlength="9" placeholder="Telefone" required>
                 </div>
-                <div class="qrcode-img">
-                    <img src="../assets/qrcode-pix.png" width="300px" alt="PIX">
-                </div>
-            </div>
+    
+                <label for="cpf-cnpj">CPF/CNPJ:</label>
+                <input type="text" id="cpf-cnpj" name="cpf-cnpj" required>
+    
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+    
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" name="valor" step="0.01" required>
+    
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-    </section>
-    <section class="form-link">
-        <p>
-            Se você gostaria de doar via Boleto Bancário
-            <br/>
-            Clique no botão abaixo
-        </p>
-        <a href="boleto-form.html">
-            Clique aqui
-        </a>
     </section>
     <footer>
         <div>

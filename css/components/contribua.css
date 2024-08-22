@@ -50,6 +50,15 @@
     border-radius: 15px;
 }
 
+.container-mid p {
+    background-color: #ececec;
+    font-size: 20pt;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding-bottom: 5rem;
+}
+
 /* Container bottom */
 
 .container-bottom {
@@ -64,6 +73,7 @@
 
 .pix-form {
     display: flex;
+    flex-direction: row-reverse;
     gap: 10rem;
 }
 
@@ -72,10 +82,11 @@
 .pix-left {
     width: fit-content;
     margin: 0 auto;
+    padding-top: 5rem;
 }
 
 .pix-img {
-    width: fit-content;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -87,7 +98,6 @@
 /* Pix Right */
 
 .qrcode-img {
-    margin-top: -2rem !important;
     width: fit-content;
     margin: 0 auto;
 }
@@ -100,78 +110,42 @@
     text-align: center;
 }
 
-.pix-form .pix-right span {
+.pix-form .pix-left span {
     display: grid;
     text-align: center;
     color: var(--primary-color);
-    font-size: 2rem;
+    font-size: 2    rem;
     font-weight: 500;
     line-height: 4rem;
 }
 
-/* Container Form */
-
-.container-form {
+.form-link{
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 600px;
-    width: 100%;
-    box-sizing: border-box;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-.container-form p {
+.form-link p {
     color: var(--primary-color);
     font-size: 20pt;
     font-weight: 600;
-    padding-bottom: 2rem;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.form-link p {
+    color: var(--primary-color);
+    font-size: 20pt;
+    font-weight: 600;
 }
 
-label {
-    margin-bottom: 8px;
-    font-size: 12pt;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.telefone-container {
-    display: flex;
-    gap: 10px;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-button {
+.form-link a {
     padding: 15px;
     width: 200px;
     margin: 0 auto;
     background-color: var(--secondary-color);
     color: #fff;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -180,7 +154,7 @@ button {
     transition: 0.3s ease-in-out;
 }
 
-button:hover {
+.form-link a:hover {
     filter: contrast(1.25);
 }
 
@@ -477,7 +451,7 @@ button:hover {
         line-height: 4rem;
     }
     
-    .pix-form .pix-right span {
+    .pix-form .pix-left span {
         font-size: 1.8rem;
         line-height: 3rem;
         text-align: center;

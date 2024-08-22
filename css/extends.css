@@ -8,18 +8,17 @@
 @import './components/header.css';
 @import './components/insta.css';
 @import './components/natal.css';
-@import './components/skills.css';
-@import './components/frontend.css';
-@import './components/backend.css';
-@import './components/mobile.css';
-@import './components/projects.css';
 @import './components/footer.css';
 @import './components/contribua.css';
 
 /*Tela Quem Somos*/
 @import './components/historia/historia.css';
+
+/*Tela Colaboradores*/
 @import './components/colaboradores/colaboradores.css';
 
 /* Perfil */
-
 @import './components/cargos/perfil.css';
+
+/* Tela Modelo Formulário */
+@import './components/boleto.css';

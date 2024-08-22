@@ -1,12 +1,29 @@
 .natal .imagem {
     width: 100vw;
+    position: relative;
   }
 
 .natal .imagem img {
   width: 100%;
-  height: 500px;
   object-fit: cover;
-  box-shadow: rgba(0, 0, 0, 0.568) 0 0 40px;
+}
+
+.arvore1 {
+  position: absolute;
+  transform: scale(0.5);
+  z-index: 2;
+}
+
+.arvore1.left {
+  left: 50%;
+  top: 50%; /* Alinha verticalmente ao centro */
+  transform: translateY(-50%) scale(0.4); /* Centraliza a árvore verticalmente e aplica a escala */
+}
+
+.arvore1.right {
+  right: 50%; /* Alinha a árvore ao lado direito */
+  top: 50%; /* Alinha verticalmente ao centro */
+  transform: translateY(-50%) scale(0.4); /* Centraliza a árvore verticalmente e aplica a escala */
 }
 
 @media screen and (max-width: 480px) {
@@ -28,7 +45,4 @@
  }
 
 @media screen and (min-width: 1025px) and (max-width: 1400px) {
-  .natal .imagem img {
-    height: 360px;
-  }
  }
