@@ -115,6 +115,10 @@
     height: 200px;
   }
 
+  .instagram h1 {
+    font-size: 24pt;
+  }
+
   .siga-insta {
     padding: 1rem 1.5rem;
     align-items: center;
