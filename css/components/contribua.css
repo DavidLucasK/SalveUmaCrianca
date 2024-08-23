@@ -52,6 +52,7 @@
 
 .container-mid p {
     background-color: #ececec;
+    width: 100vw;
     font-size: 20pt;
     text-align: center;
     color: var(--primary-color);
@@ -82,12 +83,17 @@
 .pix-left {
     width: fit-content;
     margin: 0 auto;
-    padding-top: 5rem;
 }
 
 .pix-img {
-    width: 70%;
-    margin: 0 auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #ececec;
+}
+
+.pix-img img {
+    width: fit-content !important;
 }
 
 .cnpj {
