@@ -46,4 +46,12 @@
         padding: 0 2rem 5rem;
         flex-direction: column;
     }
+
+    .perfil .titulo p {
+        font-size: 30pt;
+    }
+
+    .textos h2 {
+        font-size: 24pt;
+    }
 }
