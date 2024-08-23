@@ -2,52 +2,39 @@
 
 .container-top {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15rem 17rem 7rem;
-    background: linear-gradient(180deg, #ffffff, #ececec) no-repeat;
+    gap: 5rem;
+    padding: 15rem 25rem 10rem;
+    background-image: linear-gradient(180deg, #fff, #ececec);
 }
 
 .textos-top {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 3rem;
-    margin-left: 50px;
-    width: 600px;
 }
 
-.texto1 {
+.texto01 {
     color: var(--primary-color);
     font-size: 32pt;
     font-weight: 600;
 }
 
-.texto2 {
+.texto02 {
     color: var(--primary-color);
     font-size: 16pt;
     font-weight: 400;
 }
 
-.texto3 {
+.texto03 {
     color: var(--primary-color);
     font-size: 32pt;
     font-weight: 700;
 }
 
 .imagem-top img {
-    width: 800px;
-}
-
-.title {
-    display: flex;
-}
-
-.linha {
-    margin-left: 7.5%;
-    margin-top: 80px;
-    background-color: var(--primary-color);
-    width: 85%;
-    height: 3px;
-    border-radius: 15px;
+    padding-top: 5rem;
+    padding-left: 10rem;
+    filter: drop-shadow(-50px 20px 10px rgba(0, 0, 0, 0.356));
 }
 
 .container-mid p {
@@ -120,7 +107,7 @@
     display: grid;
     text-align: center;
     color: var(--primary-color);
-    font-size: 2    rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 4rem;
 }
@@ -178,19 +165,19 @@
         text-align: center;
     }
     
-    .texto1 {
+    .texto01 {
         color: var(--primary-color);
         font-size: 24pt;
         font-weight: 600;
     }
     
-    .texto2 {
+    .texto02 {
         color: var(--primary-color);
         font-size: 12pt;
         font-weight: 400;
     }
     
-    .texto3 {
+    .texto03 {
         color: var(--primary-color);
         font-size: 24pt;
         font-weight: 700;
@@ -256,19 +243,19 @@
         text-align: center;
     }
     
-    .texto1 {
+    .texto01 {
         color: var(--primary-color);
         font-size: 24pt;
         font-weight: 600;
     }
     
-    .texto2 {
+    .texto02 {
         color: var(--primary-color);
         font-size: 12pt;
         font-weight: 400;
     }
     
-    .texto3 {
+    .texto03 {
         color: var(--primary-color);
         font-size: 24pt;
         font-weight: 700;
@@ -334,19 +321,19 @@
         text-align: center;
     }
     
-    .texto1 {
+    .texto01 {
         color: var(--primary-color);
         font-size: 24pt;
         font-weight: 600;
     }
     
-    .texto2 {
+    .texto02 {
         color: var(--primary-color);
         font-size: 12pt;
         font-weight: 400;
     }
     
-    .texto3 {
+    .texto03 {
         color: var(--primary-color);
         font-size: 24pt;
         font-weight: 700;
@@ -406,19 +393,19 @@
         padding: 15rem 8rem 7rem;
     }
     
-    .texto1 {
+    .texto01 {
         color: var(--primary-color);
         font-size: 20pt;
         font-weight: 600;
     }
     
-    .texto2 {
+    .texto02 {
         color: var(--primary-color);
         font-size: 16pt;
         font-weight: 400;
     }
     
-    .texto3 {
+    .texto03 {
         color: var(--primary-color);
         font-size: 20pt;
         font-weight: 700;

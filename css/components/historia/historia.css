@@ -1,36 +1,109 @@
 .historia {
+    display: flex;
+    flex-direction: column;
     width: 100vw;
-    padding-left: 20rem;
     padding-top: 15rem;
     padding-bottom: 10rem;
     background: linear-gradient(180deg, #ffffff, #e7e7e7) no-repeat;
 }
 
 .historia-title {
+    width: fit-content;
+    margin: 0 auto;
     padding-bottom: 5rem;
     text-shadow: -20px 5px 10px rgba(0, 0, 0, 0.205);
+    text-transform: uppercase;
 }
 
-.historia-title .linha {
-    margin-left: 5rem;
-    margin-bottom: 9rem;
-    height: 3px;
-    width: 90rem;
-}
-
-.texto {
+.texto1 {
     display: flex;
-    gap: 5rem;
+    gap: 10rem;
+    padding: 0 30rem 10rem 20rem;
 }
 
-.texto .imagens img {
+.texto1 .imagens img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
     border-radius: 20px;
+    box-shadow: -30px 20px 20px rgba(0, 0, 0, 0.250);
+    transition: 0.5s ease-in-out;
 }
 
-.texto p {
-    width: 50%;
-    font-size: 14pt;
-    line-height: 3.5rem;
+.texto1 .imagens img:hover {
+    transform: scale(1.03);
+}
+
+.texto1 p {
+    align-self: center;
+    font-size: 18pt;
+    line-height: 4rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.texto2 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10rem;
+    padding: 0 30rem 0 20rem;
+}
+
+.texto2 .imagens img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 30px 20px 20px rgba(0, 0, 0, 0.250);
+    transition: 0.5s ease-in-out;
+}
+
+.imagens {
+    position: relative;
+}
+
+.imagens .text-overlay {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30pt;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.imagens img:hover {
+    filter: brightness(0.6);
+}
+
+.imagens img:not(:hover) + .text-overlay {
+    opacity: 0;
+}
+
+.imagens img:hover + .text-overlay {
+    opacity: 1;
+}
+
+.texto2 .imagens img:hover {
+    transform: scale(1.03);
+}
+
+.texto2 p {
+    align-self: center;
+    font-size: 18pt;
+    line-height: 4rem;
+    font-weight: 500;
+    color: var(--primary-color);
 }
 
 .historia-bottom {
@@ -91,10 +164,9 @@
 
 .visao p {
     font-size: 16pt;
-    width: 1000px;/*Mudar que está errado*/
     margin: 0 auto;
     font-weight: 500;
-    padding: 3rem;
+    padding: 3rem 40rem;
 }
 
 .valores-img {
