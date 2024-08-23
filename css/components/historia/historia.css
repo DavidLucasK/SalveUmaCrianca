@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    padding-top: 15rem;
+    padding-top: 17rem;
     padding-bottom: 10rem;
     background: linear-gradient(180deg, #ffffff, #e7e7e7) no-repeat;
 }
@@ -16,7 +16,7 @@
 }
 
 .historia-title h1 {
-    font-size: 40pt;
+    font-size: 32pt;
 }
 
 .texto1 {

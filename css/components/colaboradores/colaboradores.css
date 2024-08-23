@@ -1,5 +1,5 @@
 .colab {
-    padding-top: 15rem;
+    padding-top: 17rem;
     padding-bottom: 6rem;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .colab-title p {
-    font-size: 5.5rem;
+    font-size: 32pt;
     font-weight: 600;
     color: var(--primary-color);
     text-shadow: -20px 5px 10px rgba(0, 0, 0, 0.205);
