@@ -30,3 +30,6 @@
 
 /*Tela Projetos */
 @import './components/projetos/projetos.css';
+
+/*Tela Eventos */
+@import './components/eventos/eventos.css';

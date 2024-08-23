@@ -42,9 +42,11 @@
 /* Estilo para a galeria */
 .gallery {
     display: flex;
+    justify-content: start;
     gap: 1rem;
     flex-wrap: wrap;
-    padding: 0 15rem 5rem 35rem;
+    padding: 0;
+    padding: 0 30rem;
 }
 
 .gallery-item {
@@ -53,6 +55,8 @@
     object-fit: cover;
     cursor: pointer;
     border-radius: 8px;
+    flex: 1 1 calc(25% - 1rem); /* 25% da largura menos o espaço entre os itens */
+    max-width: calc(25% - 1rem);
     transition: .3s ease-in-out;
 }
 
@@ -185,12 +189,13 @@
     }
 
     .gallery {
-        justify-content: center;
+        justify-content: start;
         padding: 0 5rem;
     }
 
     .gallery-item {
-        width: calc(100% - 10px); /* 1 item por linha */
+        flex: 1 1 calc(50% - 1rem); /* 25% da largura menos o espaço entre os itens */
+        max-width: calc(50% - 1rem);
         height: 150px; /* Ajuste a altura para telas menores */
     }
 
@@ -280,7 +285,8 @@
     }
 
     .gallery-item {
-        width: calc(50% - 10px); /* 2 itens por linha */
+        flex: 1 1 calc(50% - 1rem); /* 25% da largura menos o espaço entre os itens */
+        max-width: calc(50% - 1rem);
         height: 200px; /* Ajuste a altura */
     }
 
@@ -306,7 +312,8 @@
     }
 
     .gallery-item {
-        width: calc(600% - 20px); /* 3 itens por linha */
+        flex: 1 1 calc(50% - 1rem); /* 25% da largura menos o espaço entre os itens */
+        max-width: calc(50% - 1rem);
         height: 250px; /* Ajuste a altura */
     }
 
@@ -331,7 +338,8 @@
     }
 
     .gallery-item {
-        width: calc(350px - 20px); /* 3 itens por linha */
+        flex: 1 1 calc(50% - 1rem); /* 25% da largura menos o espaço entre os itens */
+        max-width: calc(50% - 1rem);
         height: 250px; /* Ajuste a altura */
     }
 
