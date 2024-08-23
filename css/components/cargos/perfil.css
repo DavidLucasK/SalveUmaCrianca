@@ -38,3 +38,12 @@
     font-size: 14pt;
     line-height: 2rem;
 }
+
+@media only screen and (max-width: 480px) {
+    .container-perfil {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 2rem 5rem;
+        flex-direction: column;
+    }
+}
