@@ -17,6 +17,9 @@
 /*Tela Colaboradores*/
 @import './components/colaboradores/colaboradores.css';
 
+/*Tela Colaboradores*/
+@import './components/doadores/doadores.css';
+
 /* Perfil */
 @import './components/cargos/perfil.css';
 

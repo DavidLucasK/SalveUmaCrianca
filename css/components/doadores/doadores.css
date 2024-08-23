@@ -1,45 +1,38 @@
-.colab {
+.doadores {
     padding-top: 15rem;
     padding-bottom: 6rem;
 }
 
-.colab-title {
+.doadores-title {
     display: flex;
     justify-content: center;
 }
 
-.colab-title p {
-    font-size: 5.5rem;
+.doadores-title p {
+    font-size: 4.5rem;
     font-weight: 600;
     color: var(--primary-color);
     text-shadow: -20px 5px 10px rgba(0, 0, 0, 0.205);
     text-transform: uppercase;
 }
 
-/* .colab-title .linha {
-    height: 10px;
-    width: 10px;
-    background-color: green;
-} */
-
-.container-colab {
+.container-doadores {
     justify-content: center;
     padding-top: 7rem;
 }
 
-.container-colab ul {
+.container-doadores ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Define 3 colunas de largura igual */
-    gap: 4rem; /* Espaçamento entre os itens */
-    padding-left: 10rem;
-    padding-right: 10rem;
-    padding-bottom: 7rem;
+    gap: 7rem 0; /* Espaçamento entre os itens */
     list-style-type: none; /* Remove os marcadores da lista */
     justify-items: center; /* Centraliza os itens na coluna */
+    align-items: center;
 }
 
-.container-colab ul li {
+.container-doadores ul li {
     display: flex;
+    align-items: center;
     background-color: var(--primary-color);
     color: white;
     width: 500px;
@@ -52,7 +45,7 @@
     transition: 0.3s ease-in-out;
 }
 
-.container-colab ul li:hover {
+.container-doadores ul li:hover {
     transform: scale(1.01);
     background-color: #2c3774;
 }
@@ -61,206 +54,175 @@
     margin: 0 auto;
 }
 
-.colab-cargo {
+.textos .doadores-nome {
+    font-size: 20pt;
+    font-weight: 300;
+}
+
+.doadores-lugar {
     font-size: 24pt;
     font-weight: 500;
 }
 
-.colab-nome {
-    font-size: 14pt;
-    font-weight: 300;
-}
-
-.colab-saiba {
-    cursor: pointer;
-    font-weight: 600;
-    background-color: white;
-    color: var(--primary-color);
-    width: fit-content;
-    margin: 0 auto;
-    border-radius: 15px;
-    padding: 2rem 3rem;
-    font-size: 14pt;
-    box-shadow: rgba(0, 0, 0, 0.116) -20px -5px 30px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.39) 0px -2px 6px 0px inset;
-    transition: 0.3s ease-in-out;
-}
-
-.colab-saiba:hover {
-    background-color: rgb(202, 202, 202)
-}
-
-.img-colab {
-    align-self: center;
-    width: 30%;
-}
-
-.img-colab img {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    border-radius: 50%;
-    object-position: center top;
-}
-
 @media screen and (max-width: 480px) {
-    .colab {
+    .doadores {
         width: 100vw;
     }
 
-    .colab-title p {
+    .doadores-title p {
         font-size: 4rem;
     }
 
-    .container-colab ul {
+    .container-doadores ul {
         grid-template-columns: repeat(1, 1fr); /* Define 3 colunas de largura igual */
         padding: 0;
     }
 
-    .container-colab ul li {
+    .container-doadores ul li {
         padding: 4rem;
         width: 340px;
         height: fit-content;
         gap: 4rem;
     }
 
-    .img-colab img {
+    .img-doadores img {
         width: 100px;
         height: 100px;
     }
 
-    .colab-cargo {
+    .doadores-lugar {
         font-size: 14pt !important;
         font-weight: 500;
     }
     
-    .colab-nome {
+    .doadores-nome {
         font-size: 12pt !important;
         font-weight: 300;
     }
     
-    .colab-saiba {
+    .doadores-saiba {
         padding: 1rem 2rem;
         font-size: 10pt !important;
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .colab {
+    .doadores {
         width: 100vw;
     }
 
-    .colab-title p {
+    .doadores-title p {
         font-size: 4rem;
     }
 
-    .container-colab ul {
+    .container-doadores ul {
         grid-template-columns: repeat(1, 1fr); /* Define 3 colunas de largura igual */
         padding: 0;
     }
 
-    .container-colab ul li {
+    .container-doadores ul li {
         padding: 4rem;
         width: 380px;
         height: fit-content;
         gap: 4rem;
     }
 
-    .img-colab img {
+    .img-doadores img {
         width: 100px;
         height: 100px;
     }
 
-    .colab-cargo {
+    .doadores-lugar {
         font-size: 14pt !important;
         font-weight: 500;
     }
     
-    .colab-nome {
+    .doadores-nome {
         font-size: 12pt !important;
         font-weight: 300;
     }
     
-    .colab-saiba {
+    .doadores-saiba {
         padding: 1rem 2rem;
         font-size: 10pt !important;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .colab {
+    .doadores {
         width: 100vw;
     }
 
-    .colab-title p {
+    .doadores-title p {
         font-size: 4rem;
     }
 
-    .container-colab ul {
+    .container-doadores ul {
         grid-template-columns: repeat(2, 1fr); /* Define 3 colunas de largura igual */
         gap: 4rem;
         column-gap: 4rem;
     }
 
-    .container-colab ul li {
+    .container-doadores ul li {
         padding: 4rem;
         width: 350px;
         height: fit-content;
         gap: 4rem;
     }
 
-    .img-colab img {
+    .img-doadores img {
         width: 100px;
         height: 100px;
     }
 
-    .colab-cargo {
+    .doadores-lugar {
         font-size: 14pt !important;
         font-weight: 500;
     }
     
-    .colab-nome {
+    .doadores-nome {
         font-size: 12pt !important;
         font-weight: 300;
     }
     
-    .colab-saiba {
+    .doadores-saiba {
         padding: 1rem 2rem;
         font-size: 10pt !important;
     }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1400px) {
-    .colab {
+    .doadores {
         width: 100vw;
     }
 
-    .container-colab ul {
+    .container-doadores ul {
         justify-content: center;
     }
 
-    .container-colab ul li {
+    .container-doadores ul li {
         padding: 4rem;
         width: 380px;
         height: fit-content;
         gap: 4rem;
     }
 
-    .img-colab img {
+    .img-doadores img {
         width: 100px;
         height: 100px;
     }
 
-    .colab-cargo {
+    .doadores-lugar {
         font-size: 14pt !important;
         font-weight: 500;
     }
     
-    .colab-nome {
+    .doadores-nome {
         font-size: 12pt !important;
         font-weight: 300;
     }
     
-    .colab-saiba {
+    .doadores-saiba {
         padding: 1rem 2rem;
         font-size: 10pt !important;
     }

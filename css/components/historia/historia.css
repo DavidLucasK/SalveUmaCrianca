@@ -15,6 +15,10 @@
     text-transform: uppercase;
 }
 
+.historia-title h1 {
+    font-size: 40pt;
+}
+
 .texto1 {
     display: flex;
     gap: 10rem;
@@ -174,30 +178,284 @@
 }
 
 .valores-img img {
+    width: 100%;
+    object-fit: cover;
     margin-bottom: -1rem;
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1400px) {
-    .historia {
-        padding-left: 10rem;
-    }
-
+@media screen and (max-width: 480px) {  
     .historia-title h1 {
-        font-size: 36pt;
+        font-size: 30pt;
+        text-align: center;
     }
     
-    .texto {
-        gap: 5rem;
+    .texto1 {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 5rem 0; 
+        gap: 4rem;
+        text-align: center;
+    }
+    
+    .texto1 .imagens img {
+        width: 400px;
+        height: 300px;
+    }
+    
+    .texto2 {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 4rem;
+        text-align: center;
+    }
+    
+    .texto2 .imagens img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .text-overlay {
+        font-size: 26pt !important;
+    }
+
+    .historia-bottom .imagem {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding-bottom: 5rem;
+    }
+    
+    .historia-bottom .imagem img {
+        object-fit: cover;
+        height: 280px;
+        transition: 0.3s ease-in-out;
+        display: block;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.445);
+    }
+    
+    .historia-bottom .imagem .text-overlay {
+        top: 40%;
+        font-size: 30pt !important;
+    }
+
+    .visao {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .visao h1 {
+        font-size: 32pt;
+    }
+    
+    .visao p {
+        font-size: 12pt;
+        font-weight: 500;
+        padding: 0;
+    }
+
+    .valores-img img {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {  
+    .historia-title h1 {
+        font-size: 30pt;
+        text-align: center;
+    }
+    
+    .texto1 {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 5rem 0; 
+        gap: 4rem;
+        text-align: center;
+    }
+    
+    .texto1 .imagens img {
+        width: 400px;
+        height: 300px;
+    }
+    
+    .texto2 {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 4rem;
+        text-align: center;
+    }
+    
+    .texto2 .imagens img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .text-overlay {
+        font-size: 26pt !important;
+    }
+
+    .historia-bottom .imagem {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding-bottom: 5rem;
+    }
+    
+    .historia-bottom .imagem img {
+        object-fit: cover;
+        height: 300px;
+        transition: 0.3s ease-in-out;
+        display: block;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.445);
+    }
+    
+    .historia-bottom .imagem .text-overlay {
+        top: 40%;
+        font-size: 30pt !important;
+    }
+
+    .visao {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .visao h1 {
+        font-size: 32pt;
+    }
+    
+    .visao p {
+        font-size: 12pt;
+        font-weight: 500;
+        padding: 0;
+    }
+
+    .valores-img img {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {  
+    .historia-title h1 {
+        font-size: 30pt;
+        text-align: center;
+    }
+    
+    .texto1 {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 5rem 0; 
+        gap: 4rem;
+        text-align: center;
+    }
+    
+    .texto1 .imagens img {
+        width: 400px;
+        height: 300px;
+    }
+    
+    .texto2 {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 4rem;
+        text-align: center;
+    }
+    
+    .texto2 .imagens img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .text-overlay {
+        font-size: 26pt !important;
+    }
+
+    .historia-bottom .imagem {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding-bottom: 5rem;
+    }
+    
+    .historia-bottom .imagem img {
+        object-fit: cover;
+        height: 300px;
+        transition: 0.3s ease-in-out;
+        display: block;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.445);
+    }
+    
+    .historia-bottom .imagem .text-overlay {
+        top: 40%;
+        font-size: 30pt !important;
+    }
+
+    .visao {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .visao h1 {
+        font-size: 32pt;
+    }
+    
+    .visao p {
+        font-size: 12pt;
+        font-weight: 500;
+        padding: 0;
+    }
+
+    .valores-img img {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+    .historia-title h1 {
+        font-size: 30pt;
+        text-align: center;
+    }
+    
+    .texto1 {
+        display: flex;
+        flex-direction: row;
+        padding: 0 0 5rem 0; 
+        gap: 4rem;
+        text-align: center;
+    }
+
+    .texto1 p {
+        font-size: 14pt;
+    }
+    
+    .texto1 .imagens img {
+        width: 500px;
+        height: 400px;
+    }
+    
+    .texto2 {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 0 5rem 0; 
+        gap: 4rem;
+        text-align: center;
+    }
+
+    .texto2 p {
+        font-size: 14pt;
+    }
+    
+    .texto2 .imagens img {
+        width: 500px;
         height: 400px;
     }
 
-    .texto .imagens img {
-        width: 400px;
-    }
-    
-    .texto p {
-        font-size: 12pt;
-        line-height: 2.2rem;
+    .text-overlay {
+        font-size: 26pt !important;
     }
 
     .historia-bottom .imagem img {
