@@ -5,7 +5,9 @@
 
 .doadores-title {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
 }
 
 .doadores-title p {
@@ -16,18 +18,24 @@
     text-transform: uppercase;
 }
 
+.doadores-title span {
+    font-size: 16pt;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-shadow: -20px 5px 10px rgba(0, 0, 0, 0.205);
+}
+
 .container-doadores {
     justify-content: center;
     padding-top: 7rem;
 }
 
 .container-doadores ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas de largura igual */
-    gap: 7rem 0; /* Espaçamento entre os itens */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem; /* Espaçamento entre os itens */
     list-style-type: none; /* Remove os marcadores da lista */
-    justify-items: center; /* Centraliza os itens na coluna */
-    align-items: center;
 }
 
 .container-doadores ul li {
@@ -35,8 +43,8 @@
     align-items: center;
     background-color: var(--primary-color);
     color: white;
-    width: 500px;
-    height: 230px;
+    width: 400px;
+    height: 200px;
     padding: 3rem;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.548)-20px -5px 20px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.575) 0px -2px 15px 0px inset;
@@ -56,12 +64,37 @@
 
 .textos .doadores-nome {
     font-size: 20pt;
+    line-height: 3.5rem;
     font-weight: 300;
 }
 
 .doadores-lugar {
     font-size: 24pt;
     font-weight: 500;
+}
+
+.facaparte  {
+    display: flex;
+    text-align: center;
+    padding: 6.1rem 0;
+}
+
+.facaparte a {
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    color: #fff;
+    margin-top: 3rem;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16pt;
+    box-shadow: rgba(0, 0, 0, 0.116) -20px -5px 30px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.589) 0px -2px 10px 0px inset;
+    transition: 0.3s ease-in-out;
+}
+
+.facaparte a:hover {
+    filter: contrast(1.25);
+    transform: scale(1.05);
 }
 
 @media screen and (max-width: 480px) {

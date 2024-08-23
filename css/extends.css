@@ -9,7 +9,6 @@
 @import './components/insta.css';
 @import './components/natal.css';
 @import './components/footer.css';
-@import './components/contribua.css';
 
 /*Tela Quem Somos*/
 @import './components/historia/historia.css';
@@ -25,3 +24,9 @@
 
 /* Tela Modelo Formulário */
 @import './components/boleto.css';
+
+/*Tela Contribua */
+@import './components/contribua.css';
+
+/*Tela Projetos */
+@import './components/projetos/projetos.css';

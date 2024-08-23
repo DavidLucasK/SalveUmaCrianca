@@ -1,9 +1,24 @@
 /* Container Top*/
 
+.title-contribua {
+    display: flex;
+    justify-content: center;
+    padding-top: 15rem;
+}
+
+.title-contribua p {
+    font-size: 48pt;
+    letter-spacing: -5px;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
 .container-top {
     display: flex;
     gap: 5rem;
-    padding: 15rem 25rem 10rem;
+    padding: 10rem 25rem 10rem;
     background-image: linear-gradient(180deg, #fff, #ececec);
 }
 
