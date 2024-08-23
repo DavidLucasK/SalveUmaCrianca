@@ -167,10 +167,17 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .title-contribua p {
+        text-align: center;
+        font-size: 40pt;
+        line-height: 6rem;
+        letter-spacing: -3px;
+    }
+    
     .container-top {
         display: grid;
         padding: 0;
-        padding-top: 15rem;
+        padding-top: 5rem;
     }
 
     .textos-top {
@@ -204,7 +211,8 @@
     
     .imagem-top img {
         width: 350px;
-        margin: 0 auto;
+        padding: 0;
+        margin-left: 0;
         margin-bottom: 5rem;
     }
 
@@ -216,7 +224,7 @@
     }
     
     .pix-form {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     
     .pix-left img {
@@ -227,20 +235,6 @@
     .pix-left p {
         text-align: center;
         width: 100vw;
-    }
-
-    .pix-right {
-        margin-top: -8rem;
-    }
-
-    .container-form {
-        margin-top: 5rem;
-        margin-bottom: 10rem;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.425);
-    }
-
-    .container-form p {
-        text-align: center;
     }
 }
 

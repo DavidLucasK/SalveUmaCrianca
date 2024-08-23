@@ -16,7 +16,7 @@
 }
 
 .historia-title h1 {
-    font-size: 32pt;
+    font-size: 40pt;
     font-weight: 600;
 }
 
@@ -197,6 +197,12 @@
         gap: 4rem;
         text-align: center;
     }
+
+    .texto1 p {
+        font-size: 16pt;
+        font-size: 800;
+        padding: 0 3rem;
+    }
     
     .texto1 .imagens img {
         width: 350px;
@@ -209,6 +215,12 @@
         padding: 0 0 5rem 0; 
         gap: 4rem;
         text-align: center;
+    }
+
+    .texto2 p {
+        font-size: 16pt;
+        font-size: 800;
+        padding: 0 3rem;
     }
     
     .texto2 .imagens img {
@@ -254,6 +266,7 @@
         font-size: 12pt;
         font-weight: 500;
         padding: 0;
+        padding: 0 2rem;
     }
 
     .valores-img img {
