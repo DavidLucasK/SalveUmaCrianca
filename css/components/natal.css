@@ -12,12 +12,13 @@
   position: absolute;
   transform: scale(0.5);
   z-index: 2;
+  filter: drop-shadow(100px 100px 50px rgba(0, 0, 0, 0.664));
 }
 
 .arvore1.left {
   left: 50%;
   top: 50%; /* Alinha verticalmente ao centro */
-  transform: translateY(-50%) scale(0.4); /* Centraliza a árvore verticalmente e aplica a escala */
+  transform: translateY(-50%) scale(0.4) scaleX(-1); /* Centraliza a árvore verticalmente e aplica a escala */
 }
 
 .arvore1.right {
