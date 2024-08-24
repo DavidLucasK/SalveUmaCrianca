@@ -1,0 +1,62 @@
+.eventos-home {
+    display: flex;
+    justify-content: center;
+}
+
+.eventos-title-home {
+    text-align: center;
+}
+
+.eventos-title-home p {
+    padding-top: 2rem;
+    font-size: 40pt;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    text-shadow: -20px 5px 10px rgba(0, 0, 0, 0.205);
+}
+
+.eventos-title-home span {
+    padding-top: 2rem;
+    font-size: 40pt;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding-bottom: 5rem;
+    text-shadow: -20px 5px 10px rgba(0, 0, 0, 0.205);
+}
+
+.eventos-home img {
+    box-shadow: -20px 10px 20px rgba(0, 0, 0, 0.479);
+    border-radius: 30px;
+    transition: .3s ease-in-out;
+}
+
+.eventos-home img:hover {
+    transform: scale(1.03);
+    filter: brightness(.7);
+}
+
+@media only screen and (max-width: 480px) {
+    .eventos-title-home {
+        padding-bottom: 7rem;
+    }
+
+    .eventos-title-home p {
+        font-size: 30pt;
+    }
+
+    .eventos-title-home span {
+        padding-top: 2rem;
+        font-size: 24pt;
+    }
+
+    .eventos-home {
+        padding: 0 2rem 7rem;
+    }
+
+    .eventos-home img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}

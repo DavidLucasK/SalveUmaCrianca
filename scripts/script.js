@@ -61,16 +61,19 @@ document.addEventListener('DOMContentLoaded', () => {
     prevBtn.addEventListener('click', () => changeImage(-1));
     nextBtn.addEventListener('click', () => changeImage(1));
 
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeModal();
+        } else if (event.key === 'ArrowRight') {
+            changeImage(1);
+        } else if (event.key === 'ArrowLeft') {
+            changeImage(-1)
+        }
+    });
+
     // Fecha o modal quando clicar fora da imagem
     window.addEventListener('click', (event) => {
         if (event.target === modal) {
-            closeModal();
-        }
-    });
-    
-    // Fecha o modal quando a tecla "Esc" é pressionada
-    window.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') {
             closeModal();
         }
     });
