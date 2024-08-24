@@ -36,3 +36,6 @@
 
 /*Tela Eventos */
 @import './components/eventos/natalsolidario.css';
+
+/*Campanhas */
+@import './components/campanhas/campanhas.css';

@@ -28,18 +28,18 @@
     flex-direction: row; /* Coloca o conteúdo em uma coluna */
     align-items: start; /* Centraliza o conteúdo horizontalmente */
     padding: 0 20rem; /* Padding lateral de 20rem */
-    gap: 5rem; /* Gap entre os textos e as imagens */
+    gap: 5rem; /* Gap entre os textos-natal e as imagens */
 }
 
-.textos {
+.textos-natal {
     width: 100%;
     text-align: left;
 }
 
-.textos span {
+.textos-natal span {
     display: block;
     margin-bottom: 2.5rem; /* Espaçamento entre os spans */
-    font-size: 16pt; /* Tamanho da fonte dos textos */
+    font-size: 16pt; /* Tamanho da fonte dos textos-natal */
     color: var(--primary-color);
 }
 
@@ -193,12 +193,12 @@
         justify-content: center;
     }
 
-    .textos {
+    .textos-natal {
         text-align: center;
         padding: 0 2rem;
     }
 
-    .textos span:nth-child(1) {
+    .textos-natal span:nth-child(1) {
         font-size: 20pt !important;
     }
 
@@ -230,12 +230,12 @@
         justify-content: center;
     }
 
-    .textos {
+    .textos-natal {
         text-align: center;
         padding: 0 2rem;
     }
 
-    .textos span:nth-child(1) {
+    .textos-natal span:nth-child(1) {
         font-size: 20pt !important;
     }
 
@@ -273,12 +273,12 @@
         justify-content: center;
     }
 
-    .textos {
+    .textos-natal {
         text-align: center;
         padding: 0 2rem;
     }
 
-    .textos span:nth-child(1) {
+    .textos-natal span:nth-child(1) {
         font-size: 20pt !important;
     }
 

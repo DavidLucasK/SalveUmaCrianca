@@ -1,0 +1,53 @@
+.campanha {
+    padding-top: 15rem;
+}
+
+.campanha .titulo {
+    text-align: center;
+}
+
+.campanha .titulo p {
+    color: var(--primary-color);
+    font-size: 40pt;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.container-campanha {
+    display: flex;
+    padding: 7rem 20rem 7rem;
+}
+
+.container-campanha .fotos-campanha {
+}
+
+.container-campanha ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.container-campanha ul li {
+}
+
+.container-campanha ul li img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+
+.container-campanha ul li img:hover {
+    filter: brightness(.7);
+}
+
+.container-campanha .textos {
+    display: block;
+}
+
+.container-campanha .textos p {
+    color: var(--primary-color);
+    font-size: 16pt;
+    line-height: 3rem;
+}
