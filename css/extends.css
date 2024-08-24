@@ -5,9 +5,8 @@
 /* Light theme */
 @import './components/nav.css';
 @import './components/inicial.css';
-@import './components/header.css';
-@import './components/insta.css';
 @import './components/natal.css';
+@import './components/insta.css';
 @import './components/footer.css';
 
 /*Tela Quem Somos*/
