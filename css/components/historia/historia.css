@@ -37,6 +37,8 @@
 
 .texto1 .imagens img:hover {
     transform: scale(1.03);
+    filter: invert();
+    box-shadow: -30px 20px 20px rgba(168, 168, 168, 0.25)
 }
 
 .texto1 p {
@@ -85,10 +87,6 @@
     align-items: center;
     justify-content: center;
     pointer-events: none;
-}
-
-.imagens img:hover {
-    filter: brightness(0.6);
 }
 
 .imagens img:not(:hover) + .text-overlay {

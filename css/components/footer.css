@@ -7,7 +7,7 @@ footer {
     align-items: center;
     text-align: center;
     color: white;
-    background: linear-gradient(90deg, #0a123a, #1C244B, #334081, #0a123a) no-repeat;
+    background: linear-gradient(90deg, #0a123a, #111d5c, #1c2d80, #0a123a) no-repeat;
     animation: gradient 10s ease infinite;
     background-size: 200% 200%;
     box-shadow: rgba(0, 0, 0, 0.623) 0 0 30px;

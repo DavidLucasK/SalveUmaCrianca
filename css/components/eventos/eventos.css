@@ -4,6 +4,8 @@
 }
 
 .eventos-title-home {
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -17,7 +19,13 @@
     text-shadow: -20px 5px 10px rgba(0, 0, 0, 0.205);
 }
 
-.eventos-title-home span {
+.eventos-home ul {
+    display: flex;
+    text-align: center;
+    padding: 0 10rem;
+}
+
+.eventos-home span {
     padding-top: 2rem;
     font-size: 40pt;
     color: var(--primary-color);
@@ -39,20 +47,120 @@
 
 @media only screen and (max-width: 480px) {
     .eventos-title-home {
-        padding-bottom: 7rem;
+        padding-top: 2rem;
+        padding-bottom: 8rem;
     }
 
     .eventos-title-home p {
         font-size: 30pt;
-    }
-
-    .eventos-title-home span {
-        padding-top: 2rem;
-        font-size: 24pt;
+        padding: 0;
     }
 
     .eventos-home {
-        padding: 0 2rem 7rem;
+        display: grid;
+    }
+
+    .eventos-home ul {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+
+    .eventos-home span {
+        font-size: 16pt;
+    }
+
+    .eventos-home img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .eventos-title-home {
+        padding-top: 2rem;
+        padding-bottom: 8rem;
+    }
+
+    .eventos-title-home p {
+        font-size: 30pt;
+        padding: 0;
+    }
+
+    .eventos-home {
+        display: grid;
+    }
+
+    .eventos-home ul {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+
+    .eventos-home span {
+        font-size: 32pt;
+    }
+
+    .eventos-home img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .eventos-title-home {
+        padding-top: 2rem;
+        padding-bottom: 8rem;
+    }
+
+    .eventos-title-home p {
+        font-size: 30pt;
+        padding: 0;
+    }
+
+    .eventos-home {
+        display: grid;
+    }
+
+    .eventos-home ul {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+
+    .eventos-home span {
+        font-size: 32pt;
+    }
+
+    .eventos-home img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1400px) {
+    .eventos-title-home {
+        padding-top: 2rem;
+        padding-bottom: 8rem;
+    }
+
+    .eventos-title-home p {
+        font-size: 30pt;
+        padding: 0;
+    }
+
+    .eventos-home {
+        display: grid;
+    }
+
+    .eventos-home ul {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+
+    .eventos-home span {
+        font-size: 32pt;
     }
 
     .eventos-home img {

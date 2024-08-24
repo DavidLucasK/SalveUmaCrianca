@@ -27,7 +27,8 @@
 
 
 .container-colab {
-    padding-top: 7rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 
 .container-colab ul {
@@ -35,7 +36,7 @@
     flex-wrap: wrap; /* Define 3 colunas de largura igual */
     justify-content: center;
     align-items: center;
-    gap: 5rem; /* Espaçamento entre os itens */
+    gap: 3rem; /* Espaçamento entre os itens */
     list-style-type: none; /* Remove os marcadores da lista */
     justify-items: center; /* Centraliza os itens na coluna */
 }
@@ -44,11 +45,13 @@
     display: flex;
     background-color: var(--primary-color);
     color: white;
-    width: 500px;
-    height: 230px;
+    width: 400px;
+    height: 200px;
     padding: 3rem;
+    align-items: center;
+    gap: 5rem;
     border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.548)-20px -5px 20px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.575) 0px -2px 15px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.548)-20px -5px 20px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.801) 0px -2px 15px 0px inset;
     box-sizing: border-box; /* Inclui padding e borda na largura do elemento */
     text-align: center; /* Centraliza o texto dentro dos itens */
     transition: 0.3s ease-in-out;
@@ -56,11 +59,10 @@
 
 .container-colab ul li:hover {
     transform: scale(1.01);
-    background-color: #2c3774;
+    background-color: #293672;
 }
 
 .textos {
-    margin: 0 auto;
 }
 
 .colab-cargo {
@@ -81,7 +83,7 @@
     width: fit-content;
     margin: 0 auto;
     border-radius: 15px;
-    padding: 2rem 3rem;
+    padding: 1rem 1rem;
     font-size: 14pt;
     box-shadow: rgba(0, 0, 0, 0.116) -20px -5px 30px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.39) 0px -2px 6px 0px inset;
     transition: 0.3s ease-in-out;
