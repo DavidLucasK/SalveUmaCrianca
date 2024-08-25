@@ -169,7 +169,7 @@
 @media only screen and (max-width: 480px) {
     .title-contribua p {
         text-align: center;
-        font-size: 40pt;
+        font-size: 36pt;
         line-height: 6rem;
         letter-spacing: -3px;
     }
@@ -243,12 +243,20 @@
     .container-top {
         display: grid;
         padding: 0;
-        padding-top: 15rem;
+        padding-top: 5rem;
+    }
+
+    .title-contribua p {
+        text-align: center;
+        font-size: 36pt;
+        line-height: 6rem;
+        letter-spacing: -3px;
     }
 
     .textos-top {
         display: grid;
         margin-left: 0;
+        padding-top: 0;
         width: 100vw;
         text-align: center;
     }
@@ -276,9 +284,10 @@
     }
     
     .imagem-top img {
-        width: 500px;
+        width: 400px;
         margin: 0 auto;
         margin-bottom: 5rem;
+        padding-left: 0;
     }
 
     .container-bottom {
@@ -286,6 +295,7 @@
         width: 100vw;
         margin: 0 auto;
         padding: 0;
+        padding-bottom: 5rem;
     }
     
     .pix-form {
@@ -364,6 +374,7 @@
         width: 100vw;
         margin: 0 auto;
         padding: 0;
+        padding-bottom: 5rem;
     }
     
     .pix-form {
