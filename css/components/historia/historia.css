@@ -435,7 +435,7 @@
     .texto1 {
         display: flex;
         flex-direction: row;
-        padding: 0 0 5rem 0; 
+        padding: 0 10rem 5rem; 
         gap: 4rem;
         text-align: center;
     }
@@ -445,14 +445,14 @@
     }
     
     .texto1 .imagens img {
-        width: 500px;
-        height: 400px;
+        width: 450px;
+        height: 300px;
     }
     
     .texto2 {
         display: flex;
         flex-direction: row-reverse;
-        padding: 0 0 5rem 0; 
+        padding: 0 10rem 5rem; 
         gap: 4rem;
         text-align: center;
     }
@@ -462,8 +462,8 @@
     }
     
     .texto2 .imagens img {
-        width: 500px;
-        height: 400px;
+        width: 450px;
+        height: 300px;
     }
 
     .text-overlay {

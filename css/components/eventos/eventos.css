@@ -159,12 +159,17 @@
         padding-bottom: 3rem;
     }
 
+    .eventos-home li {
+        display: flex;
+        flex-direction: column;
+    }
+
     .eventos-home span {
         font-size: 32pt;
     }
 
     .eventos-home img {
-        width: 100%;
+        width: 50%;
         border-radius: 10px;
     }
 }
