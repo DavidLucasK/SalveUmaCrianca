@@ -426,7 +426,7 @@
     }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1400px) {
+@media screen and (min-width: 1025px) and (max-width: 1536px) {
     .historia-title h1 {
         font-size: 30pt;
         text-align: center;

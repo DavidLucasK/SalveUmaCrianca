@@ -197,8 +197,8 @@
   }
 }
 
-/* Já existente para telas grandes: 1025px — 1400px */
-@media screen and (min-width: 1025px) and (max-width: 1400px) {
+/* Já existente para telas grandes: 1025px — 1536px */
+@media screen and (min-width: 1025px) and (max-width: 1536px) {
   .inicial {
     padding-left: 8rem;
     gap: 8rem;

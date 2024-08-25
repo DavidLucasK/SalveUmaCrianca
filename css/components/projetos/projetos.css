@@ -331,8 +331,8 @@
     }
 }
 
-/* Tela grande (1025px a 1400px) */
-@media only screen and (min-width: 1025px) and (max-width: 1400px) {
+/* Tela grande (1025px a 1536px) */
+@media only screen and (min-width: 1025px) and (max-width: 1536px) {
     .gallery {
         padding: 0 25rem 5rem 25rem; /* Ajuste o padding para telas grandes */
     }

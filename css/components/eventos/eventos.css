@@ -138,7 +138,7 @@
     }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1400px) {
+@media only screen and (min-width: 1025px) and (max-width: 1536px) {
     .eventos-title-home {
         padding-top: 2rem;
         padding-bottom: 8rem;

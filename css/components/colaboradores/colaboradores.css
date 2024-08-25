@@ -233,7 +233,7 @@
     }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1400px) {
+@media screen and (min-width: 1025px) and (max-width: 1536px) {
     .colab {
         width: 100vw;
     }

@@ -397,7 +397,7 @@
     }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1400px) {
+@media only screen and (min-width: 1025px) and (max-width: 1536px) {
     .container-top {
         width: 100vw;
         padding: 15rem 8rem 7rem;

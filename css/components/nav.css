@@ -319,8 +319,8 @@ nav .navbar__content .navbar__mobile {
 }
 
 
-/* 1025px — 1400px: desktops, telas grandes */
-@media only screen and (min-width: 1025px) and (max-width: 1400px) {
+/* 1025px — 1536px: desktops, telas grandes */
+@media only screen and (min-width: 1025px) and (max-width: 1536px) {
   nav .navbar__content {
     justify-content: space-between;
   }
