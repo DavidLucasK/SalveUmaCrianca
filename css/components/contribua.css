@@ -95,7 +95,9 @@
 }
 
 .pix-img img {
-    width: fit-content !important;
+    width: 100%;
+    max-width: 250px;
+    object-fit: cover;
 }
 
 .cnpj {
@@ -226,6 +228,10 @@
     
     .pix-form {
         flex-direction: column-reverse;
+    }
+
+    .pix-img img {
+        height: auto;
     }
     
     .pix-left img {
@@ -433,7 +439,7 @@
     }
 
     .imagem-top img {
-        width: 600px;
+        width: 700px;
     }
 
     .container-bottom {
