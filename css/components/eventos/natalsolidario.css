@@ -186,7 +186,19 @@
     opacity: 0.6;
 }
 
+.eventos-container .video-yt {
+    margin-top: 2rem;
+    width: 450px;
+    height: 300px;
+    border-radius: 15px;
+}
+
 @media only screen and (max-width: 480px) {
+    .eventos-container .video-yt {
+        width: 370px;
+        height: 300px;
+    }
+
     .eventos-container {
         flex-direction: column;
         padding: 0;
