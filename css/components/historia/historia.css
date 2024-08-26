@@ -24,6 +24,7 @@
     display: flex;
     gap: 10rem;
     padding: 0 30rem 10rem 20rem;
+    animation: appearLeft .7s  ease-in-out;
 }
 
 .texto1 .imagens img {
@@ -54,6 +55,7 @@
     flex-direction: row-reverse;
     gap: 10rem;
     padding: 0 30rem 0 20rem;
+    animation: appearRight .7s ease-in-out;
 }
 
 .texto2 .imagens img {
@@ -194,6 +196,7 @@
         padding: 0 0 5rem 0; 
         gap: 4rem;
         text-align: center;
+        animation: appearLeft .7s  ease-in-out;
     }
 
     .texto1 p {
@@ -213,6 +216,9 @@
         padding: 0 0 5rem 0; 
         gap: 4rem;
         text-align: center;
+        animation: appearRight linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 30%;
     }
 
     .texto2 p {
@@ -224,6 +230,9 @@
     .texto2 .imagens img {
         width: 350px;
         height: 250px;
+        animation: appearRight linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 30%;
     }
 
     .text-overlay {

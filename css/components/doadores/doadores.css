@@ -50,7 +50,26 @@
     box-shadow: rgba(0, 0, 0, 0.548)-20px -5px 20px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.575) 0px -2px 15px 0px inset;
     box-sizing: border-box; /* Inclui padding e borda na largura do elemento */
     text-align: center; /* Centraliza o texto dentro dos itens */
+    opacity: 0;
     transition: 0.3s ease-in-out;
+    animation: fade-in 0.5s forwards;
+    animation-fill-mode: forwards;
+}
+
+.container-doadores ul li:nth-child(1){
+animation-delay: 0s;
+}
+      
+.container-doadores ul li:nth-child(2){
+animation-delay: .3s;
+}
+
+.container-doadores ul li:nth-child(3){
+animation-delay: .5s;
+}
+
+.container-doadores ul li:nth-child(4) {
+animation-delay: .7s;
 }
 
 .container-doadores ul li:hover {
@@ -90,6 +109,9 @@
     font-size: 16pt;
     box-shadow: rgba(0, 0, 0, 0.116) -20px -5px 30px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.589) 0px -2px 10px 0px inset;
     transition: 0.3s ease-in-out;
+    animation: fade-in 0.7s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: .9s;
 }
 
 .facaparte a:hover {

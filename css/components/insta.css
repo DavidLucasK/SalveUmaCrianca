@@ -125,6 +125,10 @@
     border-radius: 20px;
     font-size: 12pt;
   }
+
+  .siga-insta {
+    animation-range: entry 0% cover 20%;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {

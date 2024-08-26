@@ -1,6 +1,8 @@
 .eventos-home {
     display: flex;
     justify-content: center;
+    opacity: 0;
+    animation: fade-in 0.7s ease-in-out forwards;
 }
 
 .eventos-title-home {
@@ -46,9 +48,11 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .eventos {
+        padding: 18rem 0 8rem 0 !important;
+    }
     .eventos-title-home {
-        padding-top: 2rem;
-        padding-bottom: 8rem;
+        padding-bottom: 3rem;
     }
 
     .eventos-title-home p {
@@ -63,7 +67,10 @@
     .eventos-home ul {
         display: flex;
         flex-direction: column;
-        padding-bottom: 3rem;
+    }
+
+    .eventos-home ul li {
+        padding-bottom: 5rem;
     }
 
     .eventos-home span {

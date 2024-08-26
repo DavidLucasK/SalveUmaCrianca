@@ -13,6 +13,8 @@
     color: var(--primary-color);
     padding: 2rem;
     text-transform: uppercase;
+    opacity: 0;
+    animation: fade-in 0.7s ease-in-out forwards;
 }
 
 .container-top {
@@ -32,34 +34,56 @@
     color: var(--primary-color);
     font-size: 32pt;
     font-weight: 600;
+    animation: fade-in 0.7s ease-in-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
 }
 
 .texto02 {
     color: var(--primary-color);
     font-size: 16pt;
     font-weight: 400;
+    animation: fade-in 0.7s ease-in-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
 }
 
 .texto03 {
     color: var(--primary-color);
     font-size: 32pt;
     font-weight: 700;
+    animation: fade-in 0.7s ease-in-out forwards;
+    animation-delay: 0.7s;
+    opacity: 0;
 }
 
 .imagem-top img {
-    padding-top: 5rem;
-    padding-left: 10rem;
+    margin-left: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 15px;
+    object-fit: cover;
     filter: drop-shadow(-50px 20px 10px rgba(0, 0, 0, 0.356));
+    animation: fade-in 0.7s ease-in-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+    transition: filter 3s ease-in-out;
+}
+
+.container-mid {
+    background-color: #ececec;
 }
 
 .container-mid p {
-    background-color: #ececec;
     width: 100vw;
     font-size: 20pt;
     text-align: center;
     color: var(--primary-color);
     font-weight: 600;
     padding-bottom: 5rem;
+    animation: fade-in 0.7s ease-in-out forwards;
+    animation-delay: 0.7s;
+    opacity: 0;
 }
 
 /* Container bottom */
@@ -78,6 +102,9 @@
     display: flex;
     flex-direction: row-reverse;
     gap: 10rem;
+    animation: fade-in 0.7s ease-in-out forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
 }
 
 /* Pix Left*/
@@ -96,8 +123,11 @@
 
 .pix-img img {
     width: 100%;
-    max-width: 250px;
+    max-width: 350px;
     object-fit: cover;
+    animation: fade-in 0.7s ease-in-out forwards;
+    animation-delay: .9s;
+    opacity: 0;
 }
 
 .cnpj {
@@ -169,6 +199,10 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .title-contribua {
+        padding-top: 12rem;
+    }
+
     .title-contribua p {
         text-align: center;
         font-size: 36pt;
@@ -179,7 +213,7 @@
     .container-top {
         display: grid;
         padding: 0;
-        padding-top: 5rem;
+        padding-top: 1rem;
     }
 
     .textos-top {
@@ -212,10 +246,11 @@
     }
     
     .imagem-top img {
-        width: 350px;
+        height: auto;
         padding: 0;
         margin-left: 0;
         margin-bottom: 5rem;
+        animation-delay: 0.8s;
     }
 
     .container-bottom {
@@ -232,6 +267,7 @@
 
     .pix-img img {
         height: auto;
+        max-width: 250px;
     }
     
     .pix-left img {

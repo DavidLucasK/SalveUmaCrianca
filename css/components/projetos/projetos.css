@@ -19,7 +19,6 @@
 }
 
 /* Estilos para modal e galeria de fotos */
-
 /* Container de projeto */
 .project-container {
     display: flex;
@@ -29,6 +28,17 @@
     width: fit-content;
     padding-bottom: 5rem;
 }
+
+.project:nth-child(1) {
+    opacity: 0;
+    animation: appearLeft 0.7s ease-in-out forwards;
+  }
+
+  .project:nth-child(2) {
+    opacity: 0;
+    animation: appearRight 0.7s ease-in-out forwards;
+    animation-delay: 0.3s;
+  }
 
 .project h2 {
     color: var(--primary-color);
