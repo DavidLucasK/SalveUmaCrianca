@@ -1,11 +1,10 @@
 .inicial {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 15rem;
   width: 100vw;
   padding-top: 15rem;
-  padding-left: 20rem;
+  padding-left: 32rem;
   animation: appearRight .8s ease-in-out;
 }
 
