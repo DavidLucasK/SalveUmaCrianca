@@ -111,8 +111,8 @@
 
 @media screen and (max-width: 480px) {
   .instagram li {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 
   .instagram h1 {
