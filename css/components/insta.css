@@ -87,16 +87,17 @@
 
 .siga-insta {
   display: flex;
+  align-items: center;
   width: fit-content;
   margin: 0 auto;
   margin-top: 5rem;
-  padding: 2rem 4rem;
-  background-color: var(--primary-color);
+  padding: 1.7rem 2rem;
+  background-color: #111d5c;
   color: #fff;
-  border-radius: 30px;
-  font-size: 20pt;
+  border-radius: 20px;
+  font-size: 16pt;
   transition: 0.3s ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.329) -20px -5px 20px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.39) 0px -2px 6px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.329) -20px -5px 20px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.308) 0px -2px 6px 0px inset;
 }
 
 .siga-insta:hover {
