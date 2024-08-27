@@ -23,8 +23,15 @@
 
 .eventos-home ul {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
-    padding: 0 10rem;
+}
+
+.eventos-home li {
+    flex: 1 1 45%; /* Aproximadamente metade da largura disponível, ajustando para as margens */
+    max-width: 45%;
+    margin: 1rem; /* Espaçamento entre os itens */
 }
 
 .eventos-home span {
@@ -37,6 +44,8 @@
 }
 
 .eventos-home img {
+    width: 100%;
+    max-width: 800px;
     box-shadow: -20px 10px 20px rgba(0, 0, 0, 0.479);
     border-radius: 30px;
     transition: .3s ease-in-out;
@@ -65,12 +74,13 @@
     }
 
     .eventos-home ul {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        justify-items: center;
     }
 
     .eventos-home ul li {
-        padding-bottom: 5rem;
+        max-width: 80%;
+        padding-bottom: 1rem;
     }
 
     .eventos-home span {
@@ -79,6 +89,7 @@
 
     .eventos-home img {
         width: 100%;
+        max-width: 500px;
         border-radius: 10px;
     }
 }
@@ -99,9 +110,13 @@
     }
 
     .eventos-home ul {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 3rem;
+        display: grid;
+        justify-items: center;
+    }
+
+    .eventos-home ul li {
+        max-width: 80%;
+        padding-bottom: 1rem;
     }
 
     .eventos-home span {
@@ -130,9 +145,13 @@
     }
 
     .eventos-home ul {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 3rem;
+        display: grid;
+        justify-items: center;
+    }
+
+    .eventos-home ul li {
+        max-width: 80%;
+        padding-bottom: 1rem;
     }
 
     .eventos-home span {
@@ -157,18 +176,18 @@
     }
 
     .eventos-home {
-        display: grid;
+        
     }
 
     .eventos-home ul {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 3rem;
+        display: grid;
     }
 
-    .eventos-home li {
+    .eventos-home ul li {
         display: flex;
         flex-direction: column;
+        max-width: 100%;
+        padding-bottom: 1rem;
     }
 
     .eventos-home span {
@@ -176,7 +195,7 @@
     }
 
     .eventos-home img {
-        width: 50%;
+        width: 100%;
         border-radius: 10px;
     }
 }
