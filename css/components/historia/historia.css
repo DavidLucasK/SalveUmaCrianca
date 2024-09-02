@@ -44,6 +44,7 @@
 
 .texto1 p {
     align-self: center;
+    text-align: left;
     font-size: 18pt;
     line-height: 4rem;
     font-weight: 500;
@@ -105,6 +106,7 @@
 
 .texto2 p {
     align-self: center;
+    text-align: left;
     font-size: 18pt;
     line-height: 4rem;
     font-weight: 500;
