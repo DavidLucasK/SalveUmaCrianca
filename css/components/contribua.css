@@ -133,6 +133,7 @@
 .cnpj {
     font-weight: 600;
     color: var(--secondary-color) !important;
+    user-select: text;
 }
 
 /* Pix Right */
