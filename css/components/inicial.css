@@ -1,5 +1,6 @@
 .inicial {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 15rem;
   width: 100vw;
@@ -10,7 +11,8 @@
 
 /* Imagem principal */
 .inicial img {
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
 }
 
 /* Títulos */
