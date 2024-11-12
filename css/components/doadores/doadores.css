@@ -95,7 +95,6 @@ animation-delay: .7s;
 .facaparte  {
     display: flex;
     text-align: center;
-    padding: 6.1rem 0;
 }
 
 .facaparte a {
@@ -103,7 +102,7 @@ animation-delay: .7s;
     margin: 0 auto;
     background-color: var(--secondary-color);
     color: #fff;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     border-radius: 15px;
     cursor: pointer;
     font-size: 16pt;

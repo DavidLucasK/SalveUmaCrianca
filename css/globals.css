@@ -112,7 +112,6 @@ p:not(:last-of-type),
 
 ::-webkit-scrollbar {
   width: 10px; /* Largura da scrollbar */
-  display: none;
 }
 
 ::-webkit-scrollbar-track {
