@@ -16,15 +16,21 @@
 }
 
 .arvore1.left {
-  right: 51%; /* Alinha a árvore ao lado direito */
-  top: 48%; /* Alinha verticalmente ao centro */
-  transform: translateY(-50%) scale(0.47); /* Centraliza a árvore verticalmente e aplica a escala */
+  right: 45.5%; /* Alinha a árvore ao lado direito */
+  top: 85%; /* Alinha verticalmente ao centro */
+  transform: translateY(-50%) scale(0.1); /* Centraliza a árvore verticalmente e aplica a escala */
 }
 
 .arvore1.right {
-  left: 51%;
-  top: 50%; /* Alinha verticalmente ao centro */
-  transform: translateY(-50%) scale(0.45); /* Centraliza a árvore verticalmente e aplica a escala */
+  left: 40%;
+  top: -8%; /* Alinha verticalmente ao centro */
+  transform: translateY(-50%) scale(0.15); /* Centraliza a árvore verticalmente e aplica a escala */
+}
+
+.arvore1.extra {
+  left: 38%;
+  top: 80%; /* Alinha verticalmente ao centro */
+  transform: translateY(-50%) scale(0.12) scaleX(-1); /* Centraliza a árvore verticalmente e aplica a escala */
 }
 
 @media screen and (max-width: 480px) {
